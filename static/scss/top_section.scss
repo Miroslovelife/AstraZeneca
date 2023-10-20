@@ -1,0 +1,61 @@
+
+.top__girl__section{
+    background: #F0AB00;
+    width: 100%;
+    height: 280px;
+    
+    
+}
+
+.top__girl__section__inner{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    position: relative;
+    
+    
+    
+    height: 100%;
+    .iLab__title{
+
+        margin-top: 25px;
+        margin-right: 15px;
+        
+    }
+    .Lab__title{
+        
+        margin-top: 25px;
+        height: max-content;
+        
+        
+    }
+    
+    .iLab_text{  
+        text-align: right;
+        color: #FFF;
+        font-family: Arial;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    
+}
+
+.woman{
+    position: absolute;
+    max-height: 247px;
+    bottom: 0;
+}
+
+
+@media (min-width: 768px) {
+    .top__girl__section{
+        position: absolute;
+        width: 340px;
+        height: 280px;
+        .woman{
+            top: 0;
+        }
+    }
+}

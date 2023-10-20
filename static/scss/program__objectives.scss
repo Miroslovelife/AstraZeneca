@@ -1,0 +1,59 @@
+.program__objectives{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.program__objectives__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .man__container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 200px;
+        background-color: #F0AB00;
+    }
+    
+    .white__road__line{
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        img{
+            display: block;
+        }
+
+    }
+    .objectives__text__container{
+        display: flex;
+        position: relative;
+        max-width: 300px;
+        .gold__road__line{
+            position: absolute;
+            left: 25px;
+            top: 0;
+        }
+        .objectives__text__inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 10px;
+            .objectives__text{
+                display: flex;
+                align-items: start;
+                margin-top: 20px;
+                img{
+                    margin-right: 20px;
+                }
+                span{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    
+}

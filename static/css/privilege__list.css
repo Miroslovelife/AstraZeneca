@@ -1,0 +1,14 @@
+.privilege__list {
+  background-color: #F5F5F5;
+  height: 630px;
+}
+.privilege__list .privilege {
+  display: flex;
+  margin-bottom: 25px;
+}
+.privilege__list .privilege .privilege__icon {
+  margin-right: 20px;
+}
+.privilege__list .privilege:first-child {
+  padding-top: 30px;
+}/*# sourceMappingURL=privilege__list.css.map */

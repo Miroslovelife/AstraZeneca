@@ -1,0 +1,47 @@
+.top__girl__section {
+  background: #F0AB00;
+  width: 100%;
+  height: 280px;
+}
+
+.top__girl__section__inner {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+.top__girl__section__inner .iLab__title {
+  margin-top: 25px;
+  margin-right: 15px;
+}
+.top__girl__section__inner .Lab__title {
+  margin-top: 25px;
+  height: -moz-max-content;
+  height: max-content;
+}
+.top__girl__section__inner .iLab_text {
+  text-align: right;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.woman {
+  position: absolute;
+  max-height: 247px;
+  bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .top__girl__section {
+    position: absolute;
+    width: 340px;
+    height: 280px;
+  }
+  .top__girl__section .woman {
+    top: 0;
+  }
+}/*# sourceMappingURL=top_section.css.map */

@@ -1,0 +1,44 @@
+
+.main__title__inner{
+    display: flex;
+    flex-direction: column;
+    .title{
+        text-align: center;
+        font-family: Arial;
+        font-size: 30px;
+        color: #830051;
+        font-weight: 700;
+        line-height: 40px;
+        margin-bottom: 7px;
+        
+        
+        
+    }
+    .subtitle{
+        text-align: center;
+        color: #3F4444;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 768px){
+    .main__title__inner {
+        justify-items: center;
+        .title{
+            text-align: left;
+            font-size: 40px;
+            margin-bottom: 21px;
+            br{
+                display: none;
+            }
+        }
+        
+        .subtitle{
+            text-align: left;
+        }
+    }
+    
+}

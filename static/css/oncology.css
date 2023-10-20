@@ -1,0 +1,42 @@
+.oncology {
+  display: flex;
+  justify-content: center;
+}
+.oncology .oncology__inner {
+  position: relative;
+  height: 130px;
+  width: 300px;
+  background: #F0AB00;
+}
+.oncology .oncology__inner .oncology__first__line {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 25px;
+}
+.oncology .oncology__inner .oncology__second__line {
+  position: absolute;
+  left: auto;
+  bottom: 0;
+  height: 57px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.oncology .oncology__inner .oncology__title {
+  color: #0F488B;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.oncology .oncology__inner .oncology__img {
+  position: absolute;
+  bottom: 0;
+  height: 110px;
+  right: 58px;
+}
+.oncology .oncology__inner .oncology__img img {
+  width: 82px;
+  height: 110px;
+}/*# sourceMappingURL=oncology.css.map */

@@ -1,0 +1,12 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}/*# sourceMappingURL=team.css.map */

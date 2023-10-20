@@ -1,0 +1,67 @@
+.stages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 570px;
+}
+
+.stages__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 320px;
+}
+.stages__inner .stages__list {
+  margin-left: 38px;
+}
+.stages__inner .stages__list .stage {
+  margin-bottom: 29px;
+}
+.stages__inner .stages__list .stage :first-child {
+  color: #830051;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.stages__inner .stages__list .stage :last-child {
+  color: #0F488B;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.stages__inner .stages__list :first-child :first-child {
+  color: var(--Platinum, #9DB0AC);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.stages__inner .stages__list :first-child :last-child {
+  color: #9DB0AC;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.stages__inner .stage__first__line {
+  position: absolute;
+  left: 14px;
+  top: 110px;
+}
+.stages__inner .stage__second__line {
+  position: absolute;
+  left: 14px;
+  top: 198px;
+}
+.stages__inner .double__arrow {
+  position: absolute;
+  left: 0;
+  top: 198px;
+}/*# sourceMappingURL=stages.css.map */

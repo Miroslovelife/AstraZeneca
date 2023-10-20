@@ -1,0 +1,33 @@
+.selection__directions{
+    margin-bottom: 10px;
+    .selection__directions__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .biopharma__container{
+            height: 350px;
+            width: 300px;
+            background: #830051;
+            .biopharma{
+                color: #FFF;
+                font-family: Arial;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px;
+            }
+            .biopharma__container__inner{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 20px 0 25px;
+            }
+            span{
+                color: white;
+            }
+            .biopharma__text{
+                margin: 25px 25px 0 25px;
+            }
+        }
+    }
+}

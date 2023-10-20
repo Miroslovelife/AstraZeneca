@@ -1,0 +1,69 @@
+.stages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 570px;
+}
+.stages__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 320px;
+    .stages__list{
+        margin-left: 38px;
+        .stage{
+            margin-bottom: 29px;
+            :first-child{
+                color: #830051;
+                font-family: Arial;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+            }
+            :last-child{
+                color: #0F488B;
+                font-family: Arial;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+            }
+        }
+        :first-child{
+            :first-child{
+                color: var(--Platinum, #9DB0AC);
+                font-family: Arial;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+            }
+            :last-child{
+                color: #9DB0AC;
+                font-family: Arial;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+            }
+        }
+        
+    }
+    .stage__first__line{
+        position: absolute;
+        left: 14px;
+        top: 110px;
+    }
+    .stage__second__line{
+        position: absolute;
+        left: 14px;
+        top: 198px;
+    }
+    .double__arrow{
+        position: absolute;
+        left: 0;
+        top: 198px; 
+    }
+}

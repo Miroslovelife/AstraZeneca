@@ -1,0 +1,36 @@
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+#burger_button{
+    border: none;
+    background: none;
+}
+
+.menu__items{
+   display: none;
+}
+
+.menu__items_after{
+    display: block;
+
+}
+
+
+@media (min-width: 768px){
+    .header__inner{
+        margin-top: 18px;
+        .logo{
+            margin-right: auto;
+            
+        }
+    }
+    
+
+    #burger_button{
+        margin-right: 26px;
+    }
+}

@@ -1,0 +1,58 @@
+.application__form {
+  height: 395px;
+  background: url("../img/background_with_molecule_atom.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.application__form .aplication__form__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.application__form .aplication__form__inner a:last-child {
+  align-items: left;
+}
+.application__form .aplication__form__inner .aplication__title {
+  padding: 30px 0 15px 0;
+  text-align: center;
+}
+.application__form .aplication__form__inner .aplication__title span {
+  color: white;
+}
+.application__form .aplication__form__inner .aplication__title span:first-child {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+}
+.application__form .aplication__form__inner .aplication__title span:last-child {
+  font-family: Arial;
+  font-size: 26px;
+  font-weight: 700;
+}
+.application__form .aplication__form__inner .aplication__button button {
+  border: none;
+  background: #F0AB00;
+  width: 197px;
+  height: 56px;
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 16px;
+  color: #3F4444;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+.application__form .aplication__form__inner .aplication__text {
+  font-family: Arial;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-bottom: 25px;
+}
+.application__form .aplication__read__more a {
+  text-decoration: none;
+  font-family: Arial;
+  color: #F0AB00;
+  font-size: 12px;
+}/*# sourceMappingURL=aplication_form.css.map */
