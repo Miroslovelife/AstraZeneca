@@ -4,8 +4,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #F5F5F5;
-    .container{
-        padding: 0;
+       
     }
     .about__partners__title{
         text-align: center;
@@ -49,20 +48,14 @@
             }
         }
     }
+
+
+.swiper-slide{
+    background-color: white;
 }
 
-.circle{
-    background: #3F4444;
-    border-radius: 50%;
-    height: 8px;
-    width: 8px;
+@media (min-width: 768px) {
+    .carousel__inner{
+        width: 700px;
+    }
 }
-
-.active_circle{
-    background: #830051;
-    border-radius: 50%;
-    height: 8px;
-    width: 8px;
-}
-
-

@@ -23,6 +23,7 @@
 @media (min-width: 768px) {
   .main__title__inner {
     justify-items: center;
+    margin-bottom: 50px;
   }
   .main__title__inner .title {
     text-align: left;

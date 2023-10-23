@@ -1,0 +1,31 @@
+.partners__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F5F5F5;
+}
+.partners__footer .partners__footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+}
+.partners__footer .partners__swiper {
+  width: 300px;
+  overflow: hidden;
+}
+.partners__footer .partners__swiper .pagination__custom {
+  display: flex;
+  justify-content: center;
+}
+.partners__footer .partners__swiper .partners__slide .partners__slide__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
+
+.partners__swiper .pagination__custom__partners {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=partners_footer.css.map */

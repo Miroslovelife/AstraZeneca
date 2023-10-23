@@ -9,7 +9,6 @@
 
 .top__girl__section__inner{
     display: flex;
-    margin-top: 25px;
     justify-content: center;
     position: relative;
     
@@ -52,10 +51,10 @@
 @media (min-width: 768px) {
     .top__girl__section{
         position: absolute;
+        right: 34px;
+        top: 265px;
         width: 340px;
         height: 280px;
-        .woman{
-            top: 0;
-        }
+
     }
 }

@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstraZeneca</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css">
+
+</head>
 
 <body>
     <header class="header">
@@ -14,7 +17,7 @@
                 <div class="fold__out__menu">
                     <div class="fold__out__menu__container">
                         <button id="burger_button">
-                            <img src="../static/img/fold_out_menu.svg" alt="">
+                            <img src="img/fold_out_menu.svg" alt="">
                         </button>
                         <nav class="menu__items" id="menu__items">
                             <ul>
@@ -33,13 +36,13 @@
                         <picture>
                             <source srcset="../static/img/logo_for_desc.png" media="(min-width: 1920px)" />
                             <source srcset="../static/img/logo_for_tab.png" media="(min-width: 768px)" />
-                            <img src="../static/img/logo.png" />
+                            <img src="img/logo.png" />
                         </picture>
                     </a>
                 </div>
                 <div class="skolkovo__logo">
                     <a href="#" class="skolkovo__logo__link">
-                        <img src="../static/img/skolkovo_logo.svg" alt="Skolkovo Logo">
+                        <img src="img/skolkovo_logo.svg" alt="Skolkovo Logo">
                     </a>
                 </div>
             </div>
@@ -60,45 +63,50 @@
         </div>
     </div>
     <div class="top__girl__section">
-        <div class="container">
-            <div class="top__girl__section__inner">
-                <div class="iLab__title">
-                    <img src="../static/img/iLAB.svg" alt="">
+        <div class="top__girl__section__inner">
+            <div class="iLab__title">
+                <img src="img/iLAB.svg" alt="">
+            </div>
+            <div class="Lab__title">
+                <img src="img/LAB.svg" alt="">
+                <div class="iLab_text">
+                    iLab
                 </div>
-                <div class="Lab__title">
-                    <img src="../static/img/LAB.svg" alt="">
-                    <div class="iLab_text">
-                        iLab
-                    </div>
-                </div>
-                <div class="woman">
-                    <img src="../static/img/woman.png" alt="">
-                </div>
+            </div>
+            <div class="woman">
+                <img src="img/woman.png" alt="">
             </div>
         </div>
     </div>
     <div class="application__form">
-        <div class="container">
             <div class="aplication__form__inner">
-                <div class="aplication__title">
-                    <span>Прием заявок до <br></span>
-                    <span>31 марта 2021</span>
+                <div class="aplication__title__container">
+                    <div class="aplication__title">
+                        <span>Прием заявок до <br></span>
+                        <span>31 марта 2021</span>
+                    </div>
+                    <form action="#" class="aplication__button">
+                        <button>Подать заявку</button>
+                    </form>
                 </div>
-                <form action="#" class="aplication__button">
-                    <button>Подать заявку</button>
-                </form>
-                <div class="aplication__text main__text">
-                    Мы собрали компетенции Фонда «Сколково», научно-технологическую и отраслевую экспертизу партнеров, а
-                    также клиническую базу медицинского центра Hadassah Medical Moscow для доработки и внедрения
-                    инновационных
+                <div class="aplication__text__container">
+                    <div class="aplication__text main__text">
+                        Мы собрали компетенции Фонда «Сколково», научно-технологическую и отраслевую экспертизу партнеров, а
+                        также клиническую базу медицинского центра Hadassah Medical Moscow для доработки и внедрения
+                        инновационных
+                        <span class="read__more__inactive main__text aplication__text" id="inactive__text">
+                            решений цифровой медицины под потребности врачей и пациентов.
+                            Проект реализуется совместными усилиями Фонда «Сколково», медицинской клиники Hadassah Medical
+                            Moscow и биофармацевтической компании AstraZeneca при поддержке компании ПАО «Ростелеком».
+        
+                        </span>
+                    </div>
                 </div>
-
+    
             </div>
             <div class="aplication__read__more">
-                <a href="">Читать далее</a>
+                <button id="read__more">Читать далее</button>
             </div>
-        </div>
-
     </div>
     <div class="about__partners">
         <div class="container">
@@ -106,11 +114,11 @@
                 <span>О партнерах</span>
             </div>
 
-            <div class="carousel">
-                <div class="carousel__inner"> <!-- Carousel -->
-                    <div class="slide">
+            <div class="swiper carousel">
+                <div class="swiper-wrapper carousel__inner"> <!-- Carousel -->
+                    <div class="swiper-slide slide">
                         <div class="slide__inner">
-                            <img src="../static/img/slider/hadassah_partner.png" alt="" />
+                            <img src="img/slider/hadassah_partner.png" alt="" />
                             <span class="main__text">
                                 Первый в России медицинский клинико-диагностический центр под управлением иностранного
                                 университетского госпиталя со столетней историей – Hadassah, единственной израильской
@@ -120,9 +128,9 @@
                             <a href="#">Читать далее</a>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="swiper-slide slide">
                         <div class="slide__inner">
-                            <img src="../static/img/slider/AstraZeneca.png" alt="" />
+                            <img src="img/slider/AstraZeneca.png" alt="" />
                             <span class="main__text">
                                 Международная научно-ориентированная биофармацевтическая компания, нацеленная на
                                 исследование, разработку и вывод на рынок рецептурных препаратов преимущественно в таких
@@ -132,9 +140,9 @@
                             <a href="#">Читать далее</a>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="swiper-slide slide">
                         <div class="slide__inner">
-                            <img src="../static/img/slider/rostelecom.svg" alt="" />
+                            <img src="img/slider/rostelecom.svg" alt="" />
                             <span class="main__text">
                                 Крупнейший в России интегрированный провайдер цифровых услуг и решений, который
                                 присутствует во всех сегментах рынка и охватывает миллионы домохозяйств, государственных
@@ -144,9 +152,9 @@
                             <a href="#">Читать далее</a>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="swiper-slide slide">
                         <div class="slide__inner">
-                            <img src="../static/img/slider/GE_h.svg" alt="" />
+                            <img src="img/slider/GE_h.svg" alt="" />
                             <span class="main__text">
                                 GE Healthcare – бизнес-подразделение GE (NYSE: GE) с оборотом $16,7 млрд. Являясь одним
                                 из ведущих мировых производителей передового медицинского оборудования и цифровых
@@ -157,13 +165,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="pagination__custom">
+
+                </div>
             </div>
-            <div class="control_panel">
-                <div class="circle" onclick="currentSlide(1)"></div>
-                <div class="circle" onclick="currentSlide(2)"></div>
-                <div class="circle" onclick="currentSlide(3)"></div>
-                <div class="circle" onclick="currentSlide(4)"></div>
-            </div>
+
         </div>
     </div>
     <div class="program__objectives">
@@ -174,17 +180,17 @@
                 </div>
                 <div class="man__container">
                     <div class="white__road__line">
-                        <img src="../static/img/white_road_line.svg" alt="">
+                        <img src="img/white_road_line.svg" alt="">
                     </div>
-                    <img src="../static/img/man.png" alt="">
+                    <img src="img/man.png" alt="">
 
                 </div>
                 <div class="objectives__text__container">
-                    <div class="gold__road__line"><img src="../static/img/gold_road_line.svg" alt=""></div>
+                    <div class="gold__road__line"><img src="img/gold_road_line.svg" alt=""></div>
                     <div class="objectives__text__inner">
                         <div class="objectives__text main__text">
 
-                            <img src="../static/img/marker_01.svg" alt="">
+                            <img src="img/marker_01.svg" alt="">
                             <span>
                                 Поиск, отбор и адаптация перспективных проектов под задачи
                                 корпораций
@@ -192,7 +198,7 @@
 
                         </div>
                         <div class="objectives__text main__text">
-                            <img src="../static/img/marker_02.svg" alt="">
+                            <img src="img/marker_02.svg" alt="">
                             <span>
                                 Взаимодействие с центрами экспертизы и врачебным
                                 сообществом. Развитие
@@ -201,7 +207,7 @@
 
                         </div>
                         <div class="objectives__text main__text">
-                            <img src="../static/img/marker_03.svg" alt="">
+                            <img src="img/marker_03.svg" alt="">
                             <span>
                                 Сбор и учет обратной связи от врачей и пациентов.
                                 Доработка продукта с
@@ -222,12 +228,12 @@
                 <div class="reasons__title title">
                     Зачем участвовать
                 </div>
-                <div class="reasons__carousel">
-                    <div class="carousel__reasons">
-                        <div class="carousel__inner"> <!-- Carousel -->
-                            <div class="reason__slide">
+                <div class="reasons__carousel ">
+                    <div class="swiper carousel__reasons ">
+                        <div class="swiper-wrapper carousel__inner "> <!-- Carousel -->
+                            <div class="swiper-slide reason__slide">
                                 <div class="reason__slide__inner">
-                                    <img src="../static/img/second_slider/first_reason_img.svg" alt="" />
+                                    <img src="img/second_slider/first_reason_img.svg" alt="" />
                                     <span class="main__text">
                                         Первый в России медицинский клинико-диагностический центр под управлением
                                         иностранного
@@ -237,9 +243,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="reason__slide">
+                            <div class="swiper-slide reason__slide">
                                 <div class="reason__slide__inner">
-                                    <img src="../static/img/second_slider/second_reason_img.svg" alt="" />
+                                    <img src="img/second_slider/second_reason_img.svg" alt="" />
                                     <span class="main__text">
                                         Первый в России медицинский клинико-диагностический центр под управлением
                                         иностранного
@@ -249,9 +255,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="reason__slide">
+                            <div class="swiper-slide reason__slide">
                                 <div class="reason__slide__inner">
-                                    <img src="../static/img/second_slider/third_reason_img.svg" alt="" />
+                                    <img src="img/second_slider/third_reason_img.svg" alt="" />
                                     <span class="main__text">
                                         Первый в России медицинский клинико-диагностический центр под управлением
                                         иностранного
@@ -262,12 +268,11 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="pagination__custom">
+
+                        </div>
                     </div>
-                    <div class="reason__control__panel">
-                        <div class="reason__circle" onclick="currentSlide_second(1)"></div>
-                        <div class="reason__circle" onclick="currentSlide_second(2)"></div>
-                        <div class="reason__circle" onclick="currentSlide_second(3)"></div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -292,89 +297,85 @@
                     <button>Подать заявку</button>
                 </form>
                 <div class="allusion">
-                    <img src="../static/img/alert_circle.svg" alt="">
+                    <img src="img/alert_circle.svg" alt="">
                     <span>Участие в программе бесплатно</span>
                 </div>
             </div>
         </div>
     </div>
     <div class="privilege__list">
-        <div class="container">
-            <div class="privilege__list__inner">
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="../static/img/privilege/1.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Соответствие приоритетным направлениям конкурсного отбора
-                    </span>
+        <div class="privilege__list__inner">
+            <div class="privilege">
+                <div class="privilege__icon">
+                    <img src="img/privilege/1.svg" alt="">
                 </div>
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="../static/img/privilege/2.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Наличие прав на использование / потенциал защиты объектов интеллектуальной собственности на
-                        территории России
-                    </span>
+                <span class="main__text">
+                    Соответствие приоритетным направлениям конкурсного отбора
+                </span>
+            </div>
+            <div class="privilege">
+                <div class="privilege__icon">
+                    <img src="img/privilege/2.svg" alt="">
                 </div>
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="../static/img/privilege/3.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Технология / продукт не ниже уровня MVP (приветствуется наличие первых продаж / внедрений)
-                    </span>
+                <span class="main__text">
+                    Наличие прав на использование / потенциал защиты объектов интеллектуальной собственности на
+                    территории России
+                </span>
+            </div>
+            <div class="privilege">
+                <div class="privilege__icon">
+                    <img src="img/privilege/3.svg" alt="">
                 </div>
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="../static/img/privilege/4.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Сформированная команда (2+ человека в команде, закрыты ключевые функции)
-                    </span>
+                <span class="main__text">
+                    Технология / продукт не ниже уровня MVP (приветствуется наличие первых продаж / внедрений)
+                </span>
+            </div>
+            <div class="privilege">
+                <div class="privilege__icon">
+                    <img src="img/privilege/4.svg" alt="">
                 </div>
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="../static/img/privilege/5.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Наличие всех необходимых разрешений / лицензий для осуществления деятельности
-                    </span>
+                <span class="main__text">
+                    Сформированная команда (2+ человека в команде, закрыты ключевые функции)
+                </span>
+            </div>
+            <div class="privilege">
+                <div class="privilege__icon">
+                    <img src="img/privilege/5.svg" alt="">
                 </div>
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="../static/img/privilege/6.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Приоритет проектам, представляющим бизнес-интерес для компаний-партнёров iLAB и / или решающим
-                        важные задачи для системы Здравоохранения
-                    </span>
+                <span class="main__text">
+                    Наличие всех необходимых разрешений / лицензий для осуществления деятельности
+                </span>
+            </div>
+            <div class="privilege">
+                <div class="privilege__icon">
+                    <img src="img/privilege/6.svg" alt="">
                 </div>
+                <span class="main__text">
+                    Приоритет проектам, представляющим бизнес-интерес для компаний-партнёров iLAB и / или решающим
+                    важные задачи для системы Здравоохранения
+                </span>
             </div>
         </div>
     </div>
     <div class="selection__directions">
-        <div class="container">
-            <div class="selection__directions__inner">
-                <div class="title">
-                    Направления отбора
+        <div class="selection__directions__inner">
+            <div class="title">
+                Направления отбора
+            </div>
+            <div class="biopharma__container">
+                <div class="biopharma__container__inner">
+                    <div class="biopharma">
+                        Биофарма
+                    </div>
+                    <img src="img/icons/minus.svg" alt="">
                 </div>
-                <div class="biopharma__container">
-                    <div class="biopharma__container__inner">
-                        <div class="biopharma">
-                            Биофарма
-                        </div>
-                        <img src="./img/icons/minus.svg" alt="">
-                    </div>
-                    <div class="biopharma__text">
-                        <span class="main__text">
-                            Цифровые решения в области выявления, диагностики и лечения ХСН, ХБП, бронхиальной астмы,
-                            сахарного диабета, системы поддержки принятия врачебных решений, системы маршрутизации и
-                            поддержки пациентов, другие цифровые решения для врачей и пациентов в указанных нозологиях,
-                            поддержка врачей и пациентов в условиях пандемии
-                        </span>
-                    </div>
+                <div class="biopharma__text">
+                    <span class="main__text">
+                        Цифровые решения в области выявления, диагностики и лечения ХСН, ХБП, бронхиальной астмы,
+                        сахарного диабета, системы поддержки принятия врачебных решений, системы маршрутизации и
+                        поддержки пациентов, другие цифровые решения для врачей и пациентов в указанных нозологиях,
+                        поддержка врачей и пациентов в условиях пандемии
+                    </span>
                 </div>
             </div>
         </div>
@@ -387,16 +388,16 @@
                         Онкология
                     </div>
                     <div class="oncology__icon">
-                        <img src="./img/icons/plus.svg" alt="">
+                        <img src="img/icons/plus.svg" alt="">
                     </div>
                 </div>
                 <div class="oncology__second__line">
-                    <img src="./img/oncology.svg" alt="">
+                    <img src="img/oncology.svg" alt="">
                 </div>
                 <div class="oncology__img">
-                    <img src="./img/man_2.png" alt="">
+                    <img src="img/man_2.png" alt="">
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -429,18 +430,18 @@
                     </div>
                 </div>
                 <div class="stage__first__line">
-                    <img src="./img/stage_first_line.svg" alt="">
+                    <img src="img/stage_first_line.svg" alt="">
                 </div>
                 <div class="stage__second__line">
-                    <img src="./img/stage_second_line.svg" alt="">
+                    <img src="img/stage_second_line.svg" alt="">
                 </div>
                 <div class="double__arrow">
-                    <img src="./img/icons/double_arrow.svg" alt="">
+                    <img src="img/icons/double_arrow.svg" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="juries_and_mentors">
+    <div class="juries__and__mentors">
         <div class="container">
             <div class="juries_and_mentors__inner">
                 <div class="juri__title title">
@@ -455,11 +456,11 @@
                     <span>Индивидуальной работы (тестирования гипотез, custdev)</span>
                 </div>
                 <div class="juri__carousel">
-                    <div class="carousel__juri">
-                        <div class="carousel__inner__inner"> <!-- Carousel -->
-                            <div class="juri__slide">
+                    <div class="swiper carousel__juri">
+                        <div class="swiper-wrapper carousel__inner__inner"> <!-- Carousel -->
+                            <div class="swiper-slide juri__slide">
                                 <div class="juri__slide__inner">
-                                    <img src="../static/img/juri/juri_1.svg" alt="" />
+                                    <img src="img/juri/juri_1.svg" alt="" />
                                     <span class="juri__name">
                                         Родион<br>
                                         Сигал
@@ -469,9 +470,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="juri__slide">
+                            <div class="swiper-slide juri__slide">
                                 <div class="juri__slide__inner">
-                                    <img src="../static/img/juri/juri_2.svg" alt="" />
+                                    <img src="img/juri/juri_2.svg" alt="" />
                                     <span class="juri__name">
                                         Борис<br>
                                         Глазков
@@ -481,9 +482,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="juri__slide">
+                            <div class="swiper-slide juri__slide">
                                 <div class="juri__slide__inner">
-                                    <img src="../static/img/juri/juri_3.svg" alt="" />
+                                    <img src="img/juri/juri_3.svg" alt="" />
                                     <span class="juri__name">
                                         Любовь <br>Симонова-Емельянова
                                     </span>
@@ -492,9 +493,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="juri__slide">
+                            <div class="swiper-slide juri__slide">
                                 <div class="juri__slide__inner">
-                                    <img src="../static/img/juri/juri_4.svg" alt="" />
+                                    <img src="img/juri/juri_4.svg" alt="" />
                                     <span class="juri__name">
                                         Анна <br>Бращенкова
                                     </span>
@@ -503,9 +504,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="juri__slide">
+                            <div class="swiper-slide juri__slide">
                                 <div class="juri__slide__inner">
-                                    <img src="../static/img/juri/juri_5.svg" alt="" />
+                                    <img src="img/juri/juri_5.svg" alt="" />
                                     <span class="juri__name">
                                         Лоран <br>Акопян
                                     </span>
@@ -514,9 +515,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="juri__slide">
+                            <div class="swiper-slide juri__slide">
                                 <div class="juri__slide__inner">
-                                    <img src="../static/img/juri/juri_6.svg" alt="" />
+                                    <img src="img/juri/juri_6.svg" alt="" />
                                     <span class="juri__name">
                                         Алексей<br>
                                         Виноградов
@@ -526,9 +527,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="juri__slide">
+                            <div class="swiper-slide juri__slide">
                                 <div class="juri__slide__inner">
-                                    <img src="../static/img/juri/juri_7.svg" alt="" />
+                                    <img src="img/juri/juri_7.svg" alt="" />
                                     <span class="juri__name">
                                         Софья <br>
                                         Зубанова
@@ -538,9 +539,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="juri__slide">
+                            <div class="swiper-slide juri__slide">
                                 <div class="juri__slide__inner">
-                                    <img src="../static/img/juri/juri_8.svg" alt="" />
+                                    <img src="img/juri/juri_8.svg" alt="" />
                                     <span class="juri__name">
                                         Екатерина<br>
                                         Соболева
@@ -550,9 +551,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="juri__slide">
+                            <div class="swiper-slide juri__slide">
                                 <div class="juri__slide__inner">
-                                    <img src="../static/img/juri/juri_9.svg" alt="" />
+                                    <img src="img/juri/juri_9.svg" alt="" />
                                     <span class="juri__name">
                                         Глеб<br>
                                         Тимофеев
@@ -563,21 +564,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="juri__control__panel">
-                        <div class="juri__circle" onclick="currentSlide_juri(1)"></div>
-                        <div class="juri__circle" onclick="currentSlide_juri(2)"></div>
-                        <div class="juri__circle" onclick="currentSlide_juri(3)"></div>
-                        <div class="juri__circle" onclick="currentSlide_juri(4)"></div>
-                        <div class="juri__circle" onclick="currentSlide_juri(5)"></div>
-                        <div class="juri__circle" onclick="currentSlide_juri(6)"></div>
-                        <div class="juri__circle" onclick="currentSlide_juri(7)"></div>
-                        <div class="juri__circle" onclick="currentSlide_juri(8)"></div>
-                        <div class="juri__circle" onclick="currentSlide_juri(9)"></div>
+                        <div class="pagination__custom">
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     <div class="team">
         <div class="container">
@@ -585,14 +579,244 @@
                 <div class="team__title title">
                     Команда проекта
                 </div>
+                <div class="team__description">
+                    <span>20+ менторов</span><br>
+                    <span>Представители корпораций, инвесторов и успешных стартапов</span><br>
+                    <span>4+ ментора</span><br>
+                    <span>На 1 участника стартапа</span><br>
+                    <span>20+ менторов</span><br>
+                    <span>Индивидуальной работы (тестирования гипотез, custdev)</span>
+                </div>
+                <div class="team__carousel">
+                    <div class="swiper carousel__team">
+                        <div class="swiper-wrapper carousel__inner__inner">
+                            <div class="swiper-slide team__slide">
+                                <div class="team__slide__inner">
+                                    <img src="img/team/member_1.svg" alt="" />
+                                    <span class="member__name">
+                                        Камила<br>
+                                        Зарубина
+                                    </span>
+                                    <span class="post">Директор по акселерации, PhD </span>
+                                    <span class="work__place">
+                                        Лидер программы со стороны Сколково
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide team__slide">
+                                <div class="team__slide__inner">
+                                    <img src="img/team/member_2.svg" alt="" />
+                                    <span class="member__name">
+                                        Евгений<br>
+                                        Шеенко
+                                    </span>
+                                    <span class="post">CFA</span>
+                                    <span class="work__place">
+                                        Методология программы
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide team__slide">
+                                <div class="team__slide__inner">
+                                    <img src="img/team/member_3.svg" alt="" />
+                                    <span class="member__name">
+                                        Софья <br>Ярцева
+                                    </span>
+                                    <span class="post">Medical Innovation Lead</span>
+                                    <span class="work__place">
+                                        Лидер программы со стороны АстраЗенека
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide team__slide">
+                                <div class="team__slide__inner">
+                                    <img src="img/team/member_4.svg" alt="" />
+                                    <span class="member__name">
+                                        Иван <br>Таскин
+                                    </span>
+                                    <span class="work__place">
+                                        Работа со стартапами
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pagination__custom">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src="../static/js/fold_out_menu.js"></script>
-    <script src="../static/js/partners_slider.js"></script>
-    <script src="../static/js/second_slider.js"></script>
-    <script src="../static/js/juri_slider.js"></script>
-    
+    <div class="documents">
+        <div class="container">
+            <div class="documents__inner">
+                <div class="documents__title title">Документы</div>
+            </div>
+            <div class="swiper documents__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide document__slide">
+                        <div class="document__name">
+                            Согласие на обработку персональных данных
+                        </div>
+                        <div class="document__download">
+                            <div class="document__extension">
+                                PDF • 8,5 Mb
+                            </div>
+                            <button class="document__download__button">
+                                <a href="#"><img src="img/download_button.svg" alt=""></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide document__slide">
+                        <div class="document__name">
+                            Положение о конкурсном отборе
+                        </div>
+                        <div class="document__download">
+                            <div class="document__extension">
+                                PDF • 9,7 Mb
+                            </div>
+                            <button class="document__download__button">
+                                <a href="#"><img src="img/download_button.svg" alt=""></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide document__slide">
+                        <div class="document__name">
+                            Шаблон презентации
+                        </div>
+                        <div class="document__download">
+                            <div class="document__extension">
+                                PDF • 10,3 Mb
+                            </div>
+                            <button class="document__download__button">
+                                <a href="#"><img src="img/download_button.svg" alt=""></a>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="pagination__custom">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="oraganizers">
+        <div class="oraganizers__inner">
+            <div class="oraganizers__title title">
+                Организаторы
+            </div>
+            <div class="swiper oraganizers__swiper">
+                <div class="swiper-wrapper oraganizers__swiper">
+                    <div class="swiper-slide oraganizers__slide">
+                        <div class="oraganizers__slide__inner">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide oraganizers__slide">
+                        <div class="oraganizers__slide__inner">
+                            <img src="img/slider/hadassah_partner.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide oraganizers__slide">
+                        <div class="oraganizers__slide__inner">
+                            <img src="img/slider/skolkovo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide oraganizers__slide">
+                        <div class="oraganizers__slide__inner">
+                            <img src="img/slider/ge.svg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pagination__custom">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="partners__footer">
+        <div class="partners__footer__inner">
+            <div class="partners__title title">
+                Партнеры
+            </div>
+            <div class="partners__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide partners__slide">
+                        <div class="partners__slide__inner">
+                            <img src="img/slider/rostelecom.svg" width="95px" height="24px" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide partners__slide">
+                        <div class="partners__slide__inner">
+                            <img src="img/slider/horse.svg" width="95px" height="24px" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide partners__slide">
+                        <div class="partners__slide__inner">
+                            <img src="img/slider/hospital.svg" width="95px" height="24px" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide partners__slide">
+                        <div class="partners__slide__inner">
+                            <img src="img/slider/rbv.svg" width="95px" height="24px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination__custom">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__inner">
+            <div class="footer__title title">
+                Контакты
+            </div>
+            <div class="contact">
+                <div class="contact__face">
+                    Контактное лицо
+                </div>
+                <div class="contact__name">
+                    Елена Тихомирова
+                </div>
+                <div class="contact__email">
+                    <a href="mailto:ilab@sk.ru">ilab@sk.ru</a>
+                </div>
+                <div class="contact__number">
+                    <a href="tel:+74959560033">+7 (495) 956 00 33 </a> (доб. 2076)
+                </div>
+                <form action="#" class="aplication__button">
+                    <button>
+                        Подать заявку
+                    </button>
+                </form>
+            </div>
+            <div class="footer__bottom">
+                <div class="bottom__copyright">
+                    © AstraZeneca – Skolkovo Startup Challenge 2021
+                </div>
+                <div class="privacy__policy">
+                    Политика конфиденциальности
+                </div>
+                <div class="webcanape">
+                    WebCanape – разработка сайтов и маркетинг
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="../static/js/fold_out_menu.js"></script> -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/fold_out_menu.js"></script>
+    <script src="js/read_more.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/partners_swiper.js"></script>
 </body>
 
 </html>

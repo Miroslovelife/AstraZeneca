@@ -1,0 +1,22 @@
+.oraganizers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F5F5;
+    .oraganizers__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 340px;
+        .oraganizers__swiper{
+            width: 300px;
+            .oraganizers__slide{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 160px;
+            }
+        }
+    }
+
+}

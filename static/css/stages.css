@@ -4,6 +4,9 @@
   align-items: center;
   height: 570px;
 }
+.stages .container {
+  padding: 0;
+}
 
 .stages__inner {
   display: flex;

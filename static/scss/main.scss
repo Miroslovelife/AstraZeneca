@@ -34,9 +34,24 @@
     line-height: 22px;
 
 }
+
+.aplication__button{       
+    button{
+        border: none;
+        background: #F0AB00;
+        width: 197px;
+        height: 56px;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 16px;
+        color: #3F4444;
+        text-decoration: none;
+        margin-bottom: 25px;
+    }
+}
 @media (min-width: 768px){
     .container{
-        padding: 0 34px;
+        padding: 0 34px 0 34px;
     }
 }
 
@@ -51,6 +66,6 @@
 
 }
 
-// *{
-//     outline: 1px solid red;
-// }
+*{
+    outline: 1px solid red;
+}

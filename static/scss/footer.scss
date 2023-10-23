@@ -1,0 +1,80 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F5F5;
+    background-color: #fff;
+    .footer__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 340px;
+        .footer__bottom{
+            padding-bottom: 32px;
+            div{
+                color: #9DB0AC;
+                font-family: Arial;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        } 
+        .contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .contact__face{
+                color:#3F4444;
+                text-align: center;
+                font-family: Arial;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px;
+                margin-bottom: 4px;
+            }
+            .contact__name{
+                color: #3F4444;
+                text-align: center;
+                font-family: Arial;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+                margin-bottom: 15px;
+            }
+            .contact__email a{
+                text-decoration: none;
+                color: #830051;
+                text-align: center;
+                font-family: Arial;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px;
+                margin-bottom: 5px;
+            }
+            .contact__number{
+                color: #3F4444;
+                font-family: Arial;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+                margin-bottom: 27px;
+                a{
+                    text-decoration: none;
+                    color: #3F4444;
+                    text-align: center;
+                    font-family: Arial;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 22px;
+                }
+            }
+            
+        }
+    }
+}

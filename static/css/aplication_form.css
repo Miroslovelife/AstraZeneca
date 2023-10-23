@@ -1,6 +1,11 @@
 .application__form {
-  height: 395px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 50px;
   background: url("../img/background_with_molecule_atom.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -9,6 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px 0 20px;
 }
 .application__form .aplication__form__inner a:last-child {
   align-items: left;
@@ -30,18 +36,6 @@
   font-size: 26px;
   font-weight: 700;
 }
-.application__form .aplication__form__inner .aplication__button button {
-  border: none;
-  background: #F0AB00;
-  width: 197px;
-  height: 56px;
-  font-family: Arial;
-  font-weight: 700;
-  font-size: 16px;
-  color: #3F4444;
-  text-decoration: none;
-  margin-bottom: 25px;
-}
 .application__form .aplication__form__inner .aplication__text {
   font-family: Arial;
   color: white;
@@ -50,9 +44,39 @@
   line-height: 22px;
   padding-bottom: 25px;
 }
-.application__form .aplication__read__more a {
+.application__form .aplication__form__inner .aplication__text .read__more__inactive {
+  display: none;
+}
+.application__form .aplication__form__inner .aplication__text .read__more__active {
+  display: block;
+}
+.application__form .aplication__read__more button {
   text-decoration: none;
+  border: none;
+  background: none;
   font-family: Arial;
   color: #F0AB00;
   font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .application__form .aplication__form__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  .application__form .aplication__form__inner .aplication__text__container {
+    display: flex;
+    justify-content: flex-start;
+    width: 340px;
+    margin-top: 60px;
+  }
+  .application__form .aplication__form__inner .aplication__title__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .application__form .aplication__read__more {
+    display: none;
+  }
 }/*# sourceMappingURL=aplication_form.css.map */
