@@ -12,10 +12,19 @@
 }
 .oraganizers .oraganizers__inner .oraganizers__swiper {
   width: 300px;
+  height: 160px;
 }
 .oraganizers .oraganizers__inner .oraganizers__swiper .oraganizers__slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 160px;
+}
+
+@media (min-width: 768px) {
+  .oraganizers .oraganizers__inner {
+    width: 700px;
+  }
+  .oraganizers .oraganizers__inner .oraganizers__swiper {
+    width: 700px;
+  }
 }/*# sourceMappingURL=organizers.css.map */

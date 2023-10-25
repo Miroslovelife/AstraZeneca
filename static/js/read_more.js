@@ -10,4 +10,5 @@ read.onclick = function() {
 if (pageWidth >= 768) {
     document.getElementById("inactive__text").classList.remove("read__more__active");
     document.getElementById("inactive__text").classList.toggle("read__more__inactive");
+    
 }

@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px 0 20px;
 }
 .application__form .aplication__form__inner a:last-child {
   align-items: left;
@@ -60,21 +59,34 @@
 }
 
 @media (min-width: 768px) {
+  .application__form .container {
+    width: 100%;
+    padding: 0;
+  }
   .application__form .aplication__form__inner {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
   }
   .application__form .aplication__form__inner .aplication__text__container {
     display: flex;
     justify-content: flex-start;
     width: 340px;
     margin-top: 60px;
+    margin-left: 34px;
   }
   .application__form .aplication__form__inner .aplication__title__container {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-start;
+    margin-top: 270px;
+    margin-right: 177px;
+  }
+  .application__form .aplication__form__inner .aplication__title__container .aplication__title {
+    text-align: left;
+    padding: 0;
   }
   .application__form .aplication__read__more {
     display: none;

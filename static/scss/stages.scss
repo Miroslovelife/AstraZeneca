@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 570px;
+    padding-bottom: 21px;
     .container{
         padding: 0;
     }
@@ -58,15 +58,90 @@
         position: absolute;
         left: 14px;
         top: 110px;
+        height: 60px;
+        width: 2px;
+        background-color: #9DB0AC;
     }
     .stage__second__line{
         position: absolute;
         left: 14px;
         top: 198px;
+        height: 269px;
+        width: 2px;
+        background-color: #830051;
     }
     .double__arrow{
         position: absolute;
         left: 0;
-        top: 198px; 
+        top: 170px; 
     }
+}
+
+@media(min-width:768px){
+    .stages{
+        padding-bottom: 43px;
+        .stages__inner{ 
+            width: fit-content;
+            .stages__list{
+                margin-left: 38px;
+                :nth-child(2){
+                    :last-child{
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+                .stage{
+                    margin-bottom: 29px;
+                    
+                    :first-child{
+                        font-size: 17px;
+                    }
+                    :last-child{
+                        font-size: 20px;
+                    }
+                }
+                :first-child{
+                    :first-child{
+                        color: var(--Platinum, #9DB0AC);
+                        font-family: Arial;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                    }
+                    :last-child{
+    
+                        color: #9DB0AC;
+                        font-family: Arial;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 22px;
+                    }
+                }
+                :first-child{
+                    :first-child{
+                        color: var(--Platinum, #9DB0AC);
+                        font-size: 17px;
+                    }
+                    :last-child{
+                        color: #9DB0AC;
+                        font-size: 20px;
+                    }
+                }
+                
+            }
+            .stage__second__line{
+                position: absolute;
+                left: 14px;
+                top: 198px;
+                height: 210px;
+                width: 2px;
+                background-color: #830051;
+            }
+        }
+    }
+    
+    
 }

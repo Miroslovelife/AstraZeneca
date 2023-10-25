@@ -32,9 +32,13 @@
         position: relative;
         max-width: 300px;
         .gold__road__line{
+            width: 1px;
+            height: 299px;
+            background-color: #F0AB00;
             position: absolute;
             left: 25px;
             top: 0;
+            
         }
         .objectives__text__inner{
             display: flex;
@@ -56,4 +60,24 @@
     }
 
     
+}
+
+@media (min-width: 768px){
+    .program__objectives__inner{
+        .man__container{
+            width: 700px;
+        }
+        .objectives__text__container{
+            max-width: 700px;
+            .gold__road__line{
+                width: 1px;
+                height: 180px;
+                background-color: #F0AB00;
+            }
+            .objectives__text__inner{
+                align-items: flex-start;
+            }
+        }
+        
+    }
 }

@@ -23,12 +23,12 @@
 }
 
 .main__text {
-  font-family: Arial;
   color: #3F4444;
-  font-size: 14px;
+  font-family: Arial;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 .aplication__button button {
@@ -48,12 +48,12 @@
   .container {
     padding: 0 34px 0 34px;
   }
+  .title {
+    font-size: 32px;
+  }
 }
 @media (min-width: 768px) {
   .main__title {
     margin-bottom: 0;
   }
-}
-* {
-  outline: 1px solid red;
 }/*# sourceMappingURL=main.css.map */

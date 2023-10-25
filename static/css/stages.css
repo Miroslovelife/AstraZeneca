@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 570px;
+  padding-bottom: 21px;
 }
 .stages .container {
   padding: 0;
@@ -57,14 +57,77 @@
   position: absolute;
   left: 14px;
   top: 110px;
+  height: 60px;
+  width: 2px;
+  background-color: #9DB0AC;
 }
 .stages__inner .stage__second__line {
   position: absolute;
   left: 14px;
   top: 198px;
+  height: 269px;
+  width: 2px;
+  background-color: #830051;
 }
 .stages__inner .double__arrow {
   position: absolute;
   left: 0;
-  top: 198px;
+  top: 170px;
+}
+
+@media (min-width: 768px) {
+  .stages {
+    padding-bottom: 43px;
+  }
+  .stages .stages__inner {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .stages .stages__inner .stages__list {
+    margin-left: 38px;
+  }
+  .stages .stages__inner .stages__list :nth-child(2) :last-child br {
+    display: none;
+  }
+  .stages .stages__inner .stages__list .stage {
+    margin-bottom: 29px;
+  }
+  .stages .stages__inner .stages__list .stage :first-child {
+    font-size: 17px;
+  }
+  .stages .stages__inner .stages__list .stage :last-child {
+    font-size: 20px;
+  }
+  .stages .stages__inner .stages__list :first-child :first-child {
+    color: var(--Platinum, #9DB0AC);
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .stages .stages__inner .stages__list :first-child :last-child {
+    color: #9DB0AC;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .stages .stages__inner .stages__list :first-child :first-child {
+    color: var(--Platinum, #9DB0AC);
+    font-size: 17px;
+  }
+  .stages .stages__inner .stages__list :first-child :last-child {
+    color: #9DB0AC;
+    font-size: 20px;
+  }
+  .stages .stages__inner .stage__second__line {
+    position: absolute;
+    left: 14px;
+    top: 198px;
+    height: 210px;
+    width: 2px;
+    background-color: #830051;
+  }
 }/*# sourceMappingURL=stages.css.map */

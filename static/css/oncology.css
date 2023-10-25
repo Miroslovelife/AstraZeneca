@@ -39,4 +39,16 @@
 .oncology .oncology__inner .oncology__img img {
   width: 82px;
   height: 110px;
+}
+
+@media (min-width: 768px) {
+  .oncology .oncology__inner {
+    width: 700px;
+  }
+  .oncology .oncology__inner .oncology__first__line {
+    padding: 54px 20px 0 25px;
+  }
+  .oncology .oncology__inner .oncology__img {
+    right: 260px;
+  }
 }/*# sourceMappingURL=oncology.css.map */

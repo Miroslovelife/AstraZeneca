@@ -11,10 +11,17 @@
             height: fit-content;
             
         }
+        .integration__button{
+            display: none;
+        }
     }
     .reasons__carousel{
         margin-bottom: 40px;
+        .carousel__none{
+                display: none;
+            }
         .carousel__reasons{
+            
             .carousel__inner{
                 width: 300px;
                 height: fit-content;
@@ -61,4 +68,99 @@
     }
 }
 
-
+@media (min-width:768px) {
+    
+    .reasons{
+        .container{
+            width: 700px;
+            .reasons__inner{
+                
+                .reasons__carousel{
+                    width: 100%;
+                    .swiper{
+                        display: none;
+                    }
+                    .carousel__none{
+                        display: block;
+                    }
+                    .carousel__inner{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        .reason__slide{
+                            .reason__slide__inner{
+                                align-items: center;
+                                display: flex;
+                                background: #F5F5F5;
+                                height: 180px;
+                                padding: 0 40px 0 40px;
+                                .reason__slide__title{
+                                    color: #3F4444;
+                                    font-family: Arial;
+                                    font-size: 22px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 32px;
+                                }
+                            
+                                .reason__slide__image{
+                                    padding-right: 40px;
+                                }
+                            }
+                            &:last-child > .reason__slide__inner{
+                                display: flex;
+                                flex-direction: column;
+                                padding: 40px 40px 40px 40px;
+                                height: fit-content;
+                                .reason__slide__top{
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    margin-bottom: 30px;
+                                }
+                                .reason__slide__text__lower{
+                                    margin: 0 0 0 20px;
+                                    ul{
+                                        padding: 0;
+                                        margin: 0;
+                                        li{
+                                            padding: 0;
+                                            margin: 0;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                .integration__button{
+                    display: block;
+                    width: 700px;
+                    height: 70px;
+                    background: #F0AB00;
+                    margin-top: 10px;
+                    align-items: center;
+                    .integration__button__inner{
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 0 20px 0 40px;
+                        .integration__button__title{
+                            color: #3F4444;
+                            font-family: Arial;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 27px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

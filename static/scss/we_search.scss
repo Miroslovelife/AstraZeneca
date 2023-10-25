@@ -1,16 +1,19 @@
 .we__search{
-    height: 570px;
+    height: fit-content;
     background-image: url("../img/designers.png");
     background-position: center;
     background-size: cover;
     width: 100%;
-    background-color: #11000bea;
-    background-blend-mode: overlay;
     .we__search__inner{
-        
+        padding-bottom: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        .search__lower__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .search__title{  
             padding: 30px 0 15px 0;   
             text-align: center;
@@ -78,4 +81,33 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
+}
+
+@media (min-width:768px){
+    .we__search{
+        display: flex;
+        justify-content: center;
+        .we__search__inner{
+            width: 700px;
+            align-items: flex-start;
+            .search__lower__container{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 33px 0 0 0;
+                .search__reverse{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    .search__title{
+                        padding: 0;
+                        margin-right: 30px;
+                    }
+                    button{
+                        margin: 0 30px 0 0 ;
+                    }
+                }
+            }
+        }
+    }
 }

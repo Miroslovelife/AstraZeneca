@@ -1,7 +1,13 @@
 .privilege__list {
   background-color: #F5F5F5;
-  height: 630px;
-  margin: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.privilege__list .privilege__list__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .privilege__list .privilege {
   display: flex;
@@ -12,4 +18,24 @@
 }
 .privilege__list .privilege:first-child {
   padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .privilege__list {
+    padding-top: 50px;
+  }
+  .privilege__list .privilege__list__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    margin-bottom: 45px;
+  }
+  .privilege__list .privilege__list__inner .privilege {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .privilege__list .privilege__list__inner .privilege:first-child {
+    padding-top: 0;
+  }
 }/*# sourceMappingURL=privilege__list.css.map */

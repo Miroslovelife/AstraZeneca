@@ -76,4 +76,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer__inner .contact {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=footer.css.map */

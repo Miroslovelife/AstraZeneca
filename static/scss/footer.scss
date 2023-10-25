@@ -78,3 +78,14 @@
         }
     }
 }
+
+@media (min-width:768px){
+    .footer{
+        .footer__inner{
+            .contact{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+}

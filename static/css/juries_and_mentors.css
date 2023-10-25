@@ -74,4 +74,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .juries__and__mentors .juri__description {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .juries__and__mentors .juri__carousel {
+    width: 600px;
+  }
 }/*# sourceMappingURL=juries_and_mentors.css.map */

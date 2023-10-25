@@ -55,7 +55,11 @@
 }
 
 @media (min-width: 768px) {
-    .carousel__inner{
+    .carousel{
         width: 700px;
+        .carousel__inner{
+            background-color: #fff;
+            height: 500px;
+        }
     }
 }

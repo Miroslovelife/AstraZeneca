@@ -31,3 +31,20 @@
         }
     }
 }
+
+@media(min-width:768px){
+    .selection__directions{
+        .selection__directions__inner{
+            .biopharma__container{
+                width: 700px;
+                height: fit-content;
+                .biopharma__container__inner{
+                    margin: 44px 30px 24px 37px;
+                }
+                .biopharma__text{
+                    margin: 0 30px 40px 37px ;
+                }
+            }
+        }
+    }
+}

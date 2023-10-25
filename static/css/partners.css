@@ -53,7 +53,11 @@
 }
 
 @media (min-width: 768px) {
-  .carousel__inner {
+  .carousel {
     width: 700px;
+  }
+  .carousel .carousel__inner {
+    background-color: #fff;
+    height: 500px;
   }
 }/*# sourceMappingURL=partners.css.map */

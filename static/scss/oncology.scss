@@ -40,3 +40,17 @@
         }
     }
 }
+
+@media (min-width:768px){
+    .oncology{
+        .oncology__inner{
+            width: 700px;
+            .oncology__first__line{
+                padding: 54px 20px 0 25px;
+            }
+            .oncology__img{
+                right: 260px;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ var swiperDocument = new Swiper(".swiper-document", {
     pagination: {
         el: ".pagination__custom",
         clickable: true
-    }
+    },
+
 }
 );

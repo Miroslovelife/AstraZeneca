@@ -1,13 +1,18 @@
 .we__search {
-  height: 570px;
+  height: -moz-fit-content;
+  height: fit-content;
   background-image: url("../img/designers.png");
   background-position: center;
   background-size: cover;
   width: 100%;
-  background-color: rgba(17, 0, 11, 0.9176470588);
-  background-blend-mode: overlay;
 }
 .we__search .we__search__inner {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.we__search .we__search__inner .search__lower__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,4 +80,33 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .we__search {
+    display: flex;
+    justify-content: center;
+  }
+  .we__search .we__search__inner {
+    width: 700px;
+    align-items: flex-start;
+  }
+  .we__search .we__search__inner .search__lower__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 33px 0 0 0;
+  }
+  .we__search .we__search__inner .search__lower__container .search__reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .we__search .we__search__inner .search__lower__container .search__reverse .search__title {
+    padding: 0;
+    margin-right: 30px;
+  }
+  .we__search .we__search__inner .search__lower__container .search__reverse button {
+    margin: 0 30px 0 0;
+  }
 }/*# sourceMappingURL=we_search.css.map */

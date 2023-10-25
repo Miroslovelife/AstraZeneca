@@ -37,3 +37,14 @@
         
     }
 }
+
+@media (min-width:768px) {
+    .partners__footer{
+        .partners__footer__inner{
+            width: 700px;
+            .partners__swiper{
+                width: 700px;
+            }
+        }
+    }
+}

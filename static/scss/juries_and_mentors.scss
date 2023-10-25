@@ -76,3 +76,16 @@
     }
 }
 
+@media (min-width:768px) {
+    .juries__and__mentors{
+        .juri__description{
+            display: flex;
+            column-gap: 20px;
+        }
+        .juri__carousel{
+            width: 600px;
+        }
+    }
+
+    
+}

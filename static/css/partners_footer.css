@@ -28,4 +28,13 @@
 .partners__swiper .pagination__custom__partners {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .partners__footer .partners__footer__inner {
+    width: 700px;
+  }
+  .partners__footer .partners__footer__inner .partners__swiper {
+    width: 700px;
+  }
 }/*# sourceMappingURL=partners_footer.css.map */

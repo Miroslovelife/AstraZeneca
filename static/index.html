@@ -7,7 +7,6 @@
     <title>AstraZeneca</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css">
-
 </head>
 
 <body>
@@ -79,6 +78,7 @@
         </div>
     </div>
     <div class="application__form">
+        <div class="container">
             <div class="aplication__form__inner">
                 <div class="aplication__title__container">
                     <div class="aplication__title">
@@ -107,6 +107,7 @@
             <div class="aplication__read__more">
                 <button id="read__more">Читать далее</button>
             </div>
+        </div>
     </div>
     <div class="about__partners">
         <div class="container">
@@ -186,7 +187,7 @@
 
                 </div>
                 <div class="objectives__text__container">
-                    <div class="gold__road__line"><img src="img/gold_road_line.svg" alt=""></div>
+                    <div class="gold__road__line"></div>
                     <div class="objectives__text__inner">
                         <div class="objectives__text main__text">
 
@@ -228,7 +229,7 @@
                 <div class="reasons__title title">
                     Зачем участвовать
                 </div>
-                <div class="reasons__carousel ">
+                <div class="reasons__carousel">
                     <div class="swiper carousel__reasons ">
                         <div class="swiper-wrapper carousel__inner "> <!-- Carousel -->
                             <div class="swiper-slide reason__slide">
@@ -272,7 +273,73 @@
 
                         </div>
                     </div>
-
+                    <div class="carousel__inner carousel__none"> <!-- Carousel -->
+                        <div class="swiper-slide reason__slide">
+                            <div class="reason__slide__inner">
+                                <div class="reason__slide__image">
+                                    <img src="img/second_slider/first_reason_img.svg" alt="" />
+                                </div>
+                                <div class="reason__slide__text">
+                                    <span class="main__text">
+                                        Первый в России медицинский клинико-диагностический центр под управлением
+                                        иностранного
+                                        университетского госпиталя со столетней историей – Hadassah, единственной
+                                        израильской
+                                        больницы, состоящей в American Hospital Association
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reason__slide">
+                            <div class="reason__slide__inner">
+                                <div class="reason__slide__image">
+                                    <img src="img/second_slider/second_reason_img.svg" alt="" />
+                                </div>
+                                <div class="reason__slide__text">
+                                    <span class="main__text">
+                                        Первый в России медицинский клинико-диагностический центр под управлением
+                                        иностранного
+                                        университетского госпиталя со столетней историей – Hadassah, единственной
+                                        израильской
+                                        больницы, состоящей в American Hospital Association
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reason__slide">
+                            <div class="reason__slide__inner">
+                                <div class="reason__slide__top">
+                                    <div class="reason__slide__image">
+                                        <img src="img/second_slider/third_reason_img.svg" alt="" />
+                                    </div>
+                                    <div class="reason__slide__title">
+                                        Каждый участник программы сможет
+                                    </div>
+                                </div>
+                                <div class="reason__slide__text__lower">
+                                    <span class="main__text">
+                                        <ul>
+                                            <li class="main__text" > В индивидуальном режиме работать с 2-4 менторами из индустриальных компаний, 
+                                                венчурных фондов и исследовательских организаций</li>
+                                            <li class="main__text">Протестировать своё решение на базе клиники Hadassah Medical Moscow и  получить 
+                                                обратную связь от врачей и пациентов</li>
+                                            <li class="main__text">Принять участие в образовательной части программы. </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration__button">
+                        <div class="integration__button__inner">
+                            <div class="integration__button__title">
+                                Интеграции
+                            </div>
+                            <div class="integration__button__chekbox">
+                                <img src="img/chekbox.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -289,71 +356,77 @@
                     гастроэнтерологии, цифровые решения для подразделения R&D фармацевтической компании, решения по
                     поддержке пациентов-участников клинических исследований в условиях пандемии.
                 </div>
-                <div class="search__title">
-                    <span>Прием заявок до <br></span>
-                    <span>31 марта 2021</span>
-                </div>
-                <form action="#" class="search__button">
-                    <button>Подать заявку</button>
-                </form>
-                <div class="allusion">
-                    <img src="img/alert_circle.svg" alt="">
-                    <span>Участие в программе бесплатно</span>
+                <div class="search__lower__container">
+                    <div class="search__reverse"> <!-- for reverse block -->
+                       <div class="search__title">
+                           <span>Прием заявок до <br></span>
+                           <span>31 марта 2021</span>
+                       </div>
+                       <form action="#" class="search__button">
+                           <button>Подать заявку</button>
+                       </form>
+                   </div>
+                   <div class="allusion">
+                       <img src="img/alert_circle.svg" alt="">
+                       <span>Участие в программе бесплатно</span>
+                   </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="privilege__list">
-        <div class="privilege__list__inner">
-            <div class="privilege">
-                <div class="privilege__icon">
-                    <img src="img/privilege/1.svg" alt="">
+        <div class="container">
+            <div class="privilege__list__inner">
+                <div class="privilege">
+                    <div class="privilege__icon">
+                        <img src="img/privilege/1.svg" alt="">
+                    </div>
+                    <span class="main__text">
+                        Соответствие приоритетным направлениям конкурсного отбора
+                    </span>
                 </div>
-                <span class="main__text">
-                    Соответствие приоритетным направлениям конкурсного отбора
-                </span>
-            </div>
-            <div class="privilege">
-                <div class="privilege__icon">
-                    <img src="img/privilege/2.svg" alt="">
+                <div class="privilege">
+                    <div class="privilege__icon">
+                        <img src="img/privilege/2.svg" alt="">
+                    </div>
+                    <span class="main__text">
+                        Наличие прав на использование / потенциал защиты объектов интеллектуальной собственности на
+                        территории России
+                    </span>
                 </div>
-                <span class="main__text">
-                    Наличие прав на использование / потенциал защиты объектов интеллектуальной собственности на
-                    территории России
-                </span>
-            </div>
-            <div class="privilege">
-                <div class="privilege__icon">
-                    <img src="img/privilege/3.svg" alt="">
+                <div class="privilege">
+                    <div class="privilege__icon">
+                        <img src="img/privilege/3.svg" alt="">
+                    </div>
+                    <span class="main__text">
+                        Технология / продукт не ниже уровня MVP (приветствуется наличие первых продаж / внедрений)
+                    </span>
                 </div>
-                <span class="main__text">
-                    Технология / продукт не ниже уровня MVP (приветствуется наличие первых продаж / внедрений)
-                </span>
-            </div>
-            <div class="privilege">
-                <div class="privilege__icon">
-                    <img src="img/privilege/4.svg" alt="">
+                <div class="privilege">
+                    <div class="privilege__icon">
+                        <img src="img/privilege/4.svg" alt="">
+                    </div>
+                    <span class="main__text">
+                        Сформированная команда (2+ человека в команде, закрыты ключевые функции)
+                    </span>
                 </div>
-                <span class="main__text">
-                    Сформированная команда (2+ человека в команде, закрыты ключевые функции)
-                </span>
-            </div>
-            <div class="privilege">
-                <div class="privilege__icon">
-                    <img src="img/privilege/5.svg" alt="">
+                <div class="privilege">
+                    <div class="privilege__icon">
+                        <img src="img/privilege/5.svg" alt="">
+                    </div>
+                    <span class="main__text">
+                        Наличие всех необходимых разрешений / лицензий для осуществления деятельности
+                    </span>
                 </div>
-                <span class="main__text">
-                    Наличие всех необходимых разрешений / лицензий для осуществления деятельности
-                </span>
-            </div>
-            <div class="privilege">
-                <div class="privilege__icon">
-                    <img src="img/privilege/6.svg" alt="">
+                <div class="privilege">
+                    <div class="privilege__icon">
+                        <img src="img/privilege/6.svg" alt="">
+                    </div>
+                    <span class="main__text">
+                        Приоритет проектам, представляющим бизнес-интерес для компаний-партнёров iLAB и / или решающим
+                        важные задачи для системы Здравоохранения
+                    </span>
                 </div>
-                <span class="main__text">
-                    Приоритет проектам, представляющим бизнес-интерес для компаний-партнёров iLAB и / или решающим
-                    важные задачи для системы Здравоохранения
-                </span>
             </div>
         </div>
     </div>
@@ -426,14 +499,14 @@
                     </div>
                     <div class="stage">
                         <span>Октябрь 2021</span><br>
-                        <span>Демо день Итоговая диагностика</span>
+                        <span>Демо день. Итоговая диагностика</span>
                     </div>
                 </div>
                 <div class="stage__first__line">
-                    <img src="img/stage_first_line.svg" alt="">
+                    
                 </div>
                 <div class="stage__second__line">
-                    <img src="img/stage_second_line.svg" alt="">
+                    
                 </div>
                 <div class="double__arrow">
                     <img src="img/icons/double_arrow.svg" alt="">
@@ -448,12 +521,18 @@
                     Жюри и менторы
                 </div>
                 <div class="juri__description">
-                    <span>20+ менторов</span><br>
-                    <span>Представители корпораций, инвесторов и успешных стартапов</span><br>
-                    <span>4+ ментора</span><br>
-                    <span>На 1 участника стартапа</span><br>
-                    <span>20+ менторов</span><br>
-                    <span>Индивидуальной работы (тестирования гипотез, custdev)</span>
+                    <div>
+                        <span>20+ менторов</span><br>
+                        <span>Представители корпораций, инвесторов и успешных стартапов</span><br>
+                    </div>
+                    <div>
+                        <span>4+ ментора</span><br>
+                        <span>На 1 участника стартапа</span><br>
+                    </div>
+                    <div>
+                        <span>20+ менторов</span><br>
+                        <span>Индивидуальной работы (тестирования гипотез, custdev)</span>
+                    </div>
                 </div>
                 <div class="juri__carousel">
                     <div class="swiper carousel__juri">
@@ -576,17 +655,6 @@
     <div class="team">
         <div class="container">
             <div class="team__inner">
-                <div class="team__title title">
-                    Команда проекта
-                </div>
-                <div class="team__description">
-                    <span>20+ менторов</span><br>
-                    <span>Представители корпораций, инвесторов и успешных стартапов</span><br>
-                    <span>4+ ментора</span><br>
-                    <span>На 1 участника стартапа</span><br>
-                    <span>20+ менторов</span><br>
-                    <span>Индивидуальной работы (тестирования гипотез, custdev)</span>
-                </div>
                 <div class="team__carousel">
                     <div class="swiper carousel__team">
                         <div class="swiper-wrapper carousel__inner__inner">
@@ -655,7 +723,7 @@
                 <div class="documents__title title">Документы</div>
             </div>
             <div class="swiper documents__swiper">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper document__carousel">
                     <div class="swiper-slide document__slide">
                         <div class="document__name">
                             Согласие на обработку персональных данных
@@ -709,7 +777,7 @@
             <div class="oraganizers__title title">
                 Организаторы
             </div>
-            <div class="swiper oraganizers__swiper">
+            <div class="swiper">
                 <div class="swiper-wrapper oraganizers__swiper">
                     <div class="swiper-slide oraganizers__slide">
                         <div class="oraganizers__slide__inner">
@@ -737,6 +805,7 @@
 
                 </div>
             </div>
+            
         </div>
     </div>
     <div class="partners__footer">
