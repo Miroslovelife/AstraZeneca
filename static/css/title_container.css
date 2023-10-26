@@ -36,4 +36,32 @@
   .main__title__inner .subtitle {
     text-align: left;
   }
+}
+@media (min-width: 768px) {
+  .main__title__inner {
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+  .main__title__inner .title {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 21px;
+  }
+  .main__title__inner .title br {
+    display: block;
+  }
+}
+@media (min-width: 1280px) {
+  .main__title__inner .title {
+    text-align: left;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 21px;
+  }
+  .main__title__inner .title br {
+    display: block;
+  }
+  .main__title__inner .subtitle br {
+    display: none;
+  }
 }/*# sourceMappingURL=title_container.css.map */

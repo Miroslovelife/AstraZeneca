@@ -12,6 +12,7 @@
   font-weight: 700;
   line-height: 32px;
   padding: 40px 0 23px 0;
+  text-align: center;
 }
 
 .header {
@@ -55,5 +56,14 @@
 @media (min-width: 768px) {
   .main__title {
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 320px 0 320px;
+  }
+  .title {
+    text-align: left;
+    padding: 100px 0 67px 0;
   }
 }/*# sourceMappingURL=main.css.map */

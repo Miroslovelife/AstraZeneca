@@ -24,6 +24,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            div{
+                text-align: center;
+            }
             .contact__face{
                 color:#3F4444;
                 text-align: center;
@@ -82,10 +85,22 @@
 @media (min-width:768px){
     .footer{
         .footer__inner{
+            width: fit-content;
             .contact{
                 display: flex;
                 flex-direction: row;
+                column-gap: 40px;
+                div{
+                    width: fit-content;
             }
+            
+        }
+        .footer__bottom{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
         }
     }
+}
+
 }

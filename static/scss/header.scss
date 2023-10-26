@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    .header__nav__container{
+        display: none;
+    }
+
 }
 
 
@@ -35,4 +39,47 @@
     #burger_button{
         margin-right: 26px;
     }
+}
+
+@media (min-width:1280px){
+    .header{
+        margin-bottom: 0;
+    }
+    .header__inner{
+        height: 120px;
+        margin-top: 0;
+        align-items: center;
+        .logo{
+            margin-right: 0;
+        }
+        .fold__out__menu{
+            display: none;
+        }
+        .header__nav__container{
+            display: block;
+            padding: 0;
+            margin: 0;
+            ul{
+                padding-left: 0;
+                li:not(:last-child){
+                    margin-right: 50px;
+                }
+                li{
+                    column-gap: 50px;
+                    display: inline;
+                    a{
+                        text-decoration: none;
+                        color: #0F488B;
+                        font-family: Arial;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+                
+            }
+        }
+    }
+
 }

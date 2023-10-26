@@ -4,6 +4,10 @@
   height: 280px;
 }
 
+.woman__desktop {
+  display: none;
+}
+
 .top__girl__section__inner {
   display: flex;
   justify-content: center;
@@ -41,5 +45,29 @@
     top: 265px;
     width: 340px;
     height: 280px;
+  }
+}
+@media (min-width: 1280px) {
+  .top__girl__section {
+    display: none;
+  }
+  .woman__desktop {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 120px;
+  }
+  .woman__desktop img {
+    width: 390px;
+  }
+}
+@media (min-width: 1440px) {
+  .woman__desktop img {
+    width: 560px;
+  }
+}
+@media (min-width: 1815px) {
+  .woman__desktop img {
+    width: 100%;
   }
 }/*# sourceMappingURL=top_section.css.map */

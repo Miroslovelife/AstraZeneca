@@ -1,7 +1,7 @@
 .application__form{
     height: fit-content;
     padding-bottom: 50px;
-    background: url("../img/background_with_molecule_atom.png");
+    background: url("../img/background_atom.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,4 +110,52 @@
     }
     
     
+}
+
+@media (min-width: 1280px) {
+    .application__form{
+        width: 100%;
+        height: fit-content;
+        .container{
+            margin: 0;
+            padding: 0;
+        }
+        .aplication__form__inner{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: hidden;
+
+            .aplication__text__container{
+                display: flex;
+                justify-content: flex-start;
+                width: 550px;
+                margin-left: 320px;
+            }
+            .aplication__title__container{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-top: 0;
+                margin-right: 0;
+                margin-left: 320px;
+                .aplication__title{
+                    text-align: left;
+                    padding: 0;
+                }
+            }
+            
+        }
+        .aplication__read__more{
+            display: none;
+        }
+        
+    }
+}
+
+@media (min-width: 1815px) {
+    .application__form{
+        height: 590px;}
 }
