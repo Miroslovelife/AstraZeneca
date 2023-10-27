@@ -1,0 +1,31 @@
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    var rectangles = document.getElementsByClassName("circle");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1){
+        slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < rectangles.length; i++) {
+        rectangles[i].className = rectangles[i].className.replace("active_circle", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    rectangles[slideIndex - 1].className += " active_circle";
+}
+

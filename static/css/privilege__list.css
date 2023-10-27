@@ -38,4 +38,9 @@
   .privilege__list .privilege__list__inner .privilege:first-child {
     padding-top: 0;
   }
+}
+@media (min-width: 1280px) {
+  .privilege__list .privilege__list__inner {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=privilege__list.css.map */

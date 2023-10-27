@@ -78,8 +78,22 @@
         text-align: left;
         padding: 100px 0 67px 0;
     }
+    .main__text{
+        font-size: 17px;
+    }
 }
 
 // *{
 //     outline: 1px solid red;
 // }
+
+@media (min-width:1920px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .main__wrapper{
+        width: 2162px;
+        
+    }
+}

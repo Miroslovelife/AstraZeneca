@@ -10,15 +10,38 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="fold__out__menu">
-                    <div class="fold__out__menu__container">
-                        <button id="burger_button">
-                            <img src="img/fold_out_menu.svg" alt="">
-                        </button>
-                        <nav class="menu__items" id="menu__items">
+    <div class="main__wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="fold__out__menu">
+                        <div class="fold__out__menu__container">
+                            <button id="burger_button">
+                                <img src="img/fold_out_menu.svg" alt="">
+                            </button>
+                            <nav class="menu__items" id="menu__items">
+                                <ul>
+                                    <li><a href="#">О программе</a></li>
+                                    <li><a href="#">Зачем участвовать</a></li>
+                                    <li><a href="#">Кого мы ищем</a></li>
+                                    <li><a href="#">Направления</a></li>
+                                    <li><a href="#">Этапы</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <picture>
+                                <source srcset="../static/img/logo_for_desc.png" media="(min-width: 1920px)" />
+                                <source srcset="../static/img/logo_for_tab.png" media="(min-width: 768px)" />
+                                <img src="img/logo.png" />
+                            </picture>
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <div class="header__nav__container">
                             <ul>
                                 <li><a href="#">О программе</a></li>
                                 <li><a href="#">Зачем участвовать</a></li>
@@ -27,124 +50,171 @@
                                 <li><a href="#">Этапы</a></li>
                                 <li><a href="#">Контакты</a></li>
                             </ul>
-                        </nav>
+                        </div>
+                    </nav>
+                    <div class="skolkovo__logo">
+                        <a href="#" class="skolkovo__logo__link">
+                            <img src="img/skolkovo_logo.svg" alt="Skolkovo Logo">
+                        </a>
                     </div>
                 </div>
-                <div class="logo">
-                    <a href="#" class="logo__link">
-                        <picture>
-                            <source srcset="../static/img/logo_for_desc.png" media="(min-width: 1920px)" />
-                            <source srcset="../static/img/logo_for_tab.png" media="(min-width: 768px)" />
-                            <img src="img/logo.png" />
-                        </picture>
-                    </a>
-                </div>
-                <nav class="header__nav">
-                    <div class="header__nav__container">
-                        <ul>
-                            <li><a href="#">О программе</a></li>
-                            <li><a href="#">Зачем участвовать</a></li>
-                            <li><a href="#">Кого мы ищем</a></li>
-                            <li><a href="#">Направления</a></li>
-                            <li><a href="#">Этапы</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="skolkovo__logo">
-                    <a href="#" class="skolkovo__logo__link">
-                        <img src="img/skolkovo_logo.svg" alt="Skolkovo Logo">
-                    </a>
+            </div>
+        </header>
+        <div class="main__title">
+            <div class="container">
+                <div class="main__title__inner">
+                    <span class="title">
+                        ЛАБОРАТОРИЯ <br>
+                        ИННОВАЦИЙ iLAB
+                    </span>
+                    <span class="subtitle">
+                        для стартапов в области <br>
+                        цифровой медицины
+                    </span>
                 </div>
             </div>
         </div>
-    </header>
-    <div class="main__title">
-        <div class="container">
-            <div class="main__title__inner">
-                <span class="title">
-                    ЛАБОРАТОРИЯ <br>
-                    ИННОВАЦИЙ iLAB
-                </span>
-                <span class="subtitle">
-                    для стартапов в области <br>
-                    цифровой медицины
-                </span>
-            </div>
-        </div>
-    </div>
-    <div class="top__girl__section">
-        <div class="top__girl__section__inner">
-            <picture class="iLab__title">
-                <source srcset="img/iLAB_340.svg" media="(min-width: 1280px)" />
-                <source srcset="img/iLab_340.svg" media="(min-width: 340px)" />
-                <img src="img/iLAB_340.svg" />
-            </picture>
-            
-            <div class="Lab__title">
-                <picture class="Lab__title">
-                    <source srcset="img/LAB_340.svg" media="(min-width: 1280px)" />
-                    <source srcset="img/LAB_340.svg" media="(min-width: 340px)" />
-                    <img src="img/LAB_340.svg" />
+        <div class="top__girl__section">
+            <div class="top__girl__section__inner">
+                <picture class="iLab__title">
+                    <source srcset="img/iLAB_340.svg" media="(min-width: 1280px)" />
+                    <source srcset="img/iLab_340.svg" media="(min-width: 340px)" />
+                    <img src="img/iLAB_340.svg" />
                 </picture>
-                <img src="" alt="">
-                <div class="iLab_text">
-                    iLab
-                </div>
-            </div>
-            <div class="woman">
-                <img src="img/woman_340.png" alt="">
-            </div>
-            
-        </div>
-        
-    </div>
-    <div class="woman__desktop">
-        <img src="img/woman_desktop.svg" alt="">
-    </div>
-    <div class="application__form">
-        <div class="container">
-            
-            <div class="aplication__form__inner">
-                <div class="aplication__title__container">
-                    <div class="aplication__title">
-                        <span>Прием заявок до <br></span>
-                        <span>31 марта 2021</span>
+    
+                <div class="Lab__title">
+                    <picture class="Lab__title">
+                        <source srcset="img/LAB_340.svg" media="(min-width: 1280px)" />
+                        <source srcset="img/LAB_340.svg" media="(min-width: 340px)" />
+                        <img src="img/LAB_340.svg" />
+                    </picture>
+                    <img src="" alt="">
+                    <div class="iLab_text">
+                        iLab
                     </div>
-                    <form action="#" class="aplication__button">
-                        <button>Подать заявку</button>
-                    </form>
                 </div>
-                <div class="aplication__text__container">
-                    <div class="aplication__text main__text">
-                        Мы собрали компетенции Фонда «Сколково», научно-технологическую и отраслевую экспертизу партнеров, а
-                        также клиническую базу медицинского центра Hadassah Medical Moscow для доработки и внедрения
-                        инновационных
-                        <span class="read__more__inactive main__text aplication__text" id="inactive__text">
-                            решений цифровой медицины под потребности врачей и пациентов.
-                            Проект реализуется совместными усилиями Фонда «Сколково», медицинской клиники Hadassah Medical
-                            Moscow и биофармацевтической компании AstraZeneca при поддержке компании ПАО «Ростелеком».
-        
-                        </span>
-                    </div>
+                <div class="woman">
+                    <img src="img/woman_340.png" alt="">
                 </div>
     
             </div>
-            <div class="aplication__read__more">
-                <button id="read__more">Читать далее</button>
+    
+        </div>
+        <div class="woman__desktop">
+            <img src="img/woman_desktop.svg" alt="">
+        </div>
+        <div class="application__form">
+            <div class="container">
+    
+                <div class="aplication__form__inner">
+                    <div class="aplication__title__container">
+                        <div class="aplication__title">
+                            <span>Прием заявок до <br></span>
+                            <span>31 марта 2021</span>
+                        </div>
+                        <form action="#" class="aplication__button">
+                            <button>Подать заявку</button>
+                        </form>
+                    </div>
+                    <div class="aplication__text__container">
+                        <div class="aplication__text main__text">
+                            Мы собрали компетенции Фонда «Сколково», научно-технологическую и отраслевую экспертизу
+                            партнеров, а
+                            также клиническую базу медицинского центра Hadassah Medical Moscow для доработки и внедрения
+                            инновационных
+                            <span class="read__more__inactive main__text aplication__text" id="inactive__text">
+                                решений цифровой медицины под потребности врачей и пациентов.
+                                Проект реализуется совместными усилиями Фонда «Сколково», медицинской клиники Hadassah
+                                Medical
+                                Moscow и биофармацевтической компании AstraZeneca при поддержке компании ПАО «Ростелеком».
+    
+                            </span>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="aplication__read__more">
+                    <button id="read__more">Читать далее</button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="about__partners">
-        <div class="container">
-            <div class="about__partners__inner">
-                <div class="about__partners__title title">
-                    <span>О партнерах</span>
-                </div>
+        <div class="about__partners">
+            <div class="container">
+                <div class="about__partners__inner">
+                    <div class="about__partners__title title">
+                        <span>О партнерах</span>
+                    </div>
     
-                <div class="swiper carousel">
-                    <div class="swiper-wrapper carousel__inner"> <!-- Carousel -->
-                        <div class="swiper-slide slide">
+                    <div class="swiper carousel">
+                        <div class="swiper-wrapper carousel__inner"> <!-- Carousel -->
+                            <div class="swiper-slide slide">
+                                <div class="slide__inner">
+                                    <img src="img/slider/hadassah_partner.png" alt="" />
+                                    <span class="main__text">
+                                        Первый в России медицинский клинико-диагностический центр под управлением
+                                        иностранного
+                                        университетского госпиталя со столетней историей – Hadassah, единственной
+                                        израильской
+                                        больницы, состоящей в American Hospital Association
+                                    </span>
+    
+                                    <a href="#">Читать далее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide__inner">
+                                    <img src="img/slider/AstraZeneca.png" alt="" />
+                                    <span class="main__text">
+                                        Международная научно-ориентированная биофармацевтическая компания, нацеленная на
+                                        исследование, разработку и вывод на рынок рецептурных препаратов преимущественно в
+                                        таких
+                                        терапевтических областях, как онкология, кардиология, нефрология и метаболизм
+                                    </span>
+    
+                                    <a href="#">Читать далее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide__inner">
+                                    <img src="img/slider/rostelecom.svg" alt="" />
+                                    <span class="main__text">
+                                        Крупнейший в России интегрированный провайдер цифровых услуг и решений, который
+                                        присутствует во всех сегментах рынка и охватывает миллионы домохозяйств,
+                                        государственных
+                                        и частных организаций. Занимает лидирующие позиции на рынке услуг доступа
+                                    </span>
+    
+                                    <a href="#">Читать далее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide__inner">
+                                    <img src="img/slider/GE_h.svg" alt="" />
+                                    <span class="main__text">
+                                        GE Healthcare – бизнес-подразделение GE (NYSE: GE) с оборотом $16,7 млрд. Являясь
+                                        одним
+                                        из ведущих мировых производителей передового медицинского оборудования и цифровых
+                                        решений, GE Healthcare помогает врачам получать качественную информацию и принимать
+                                    </span>
+    
+                                    <a href="#">Читать далее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination__custom">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="about__partners__desktop">
+                    <div class="about__partners__title title">
+                        <div>
+                            <span>О партнерах</span>
+                        </div>
+                    </div>
+                    <div class="about__partners__desktop__inner">
+    
+                        <div class="slide">
                             <div class="slide__inner">
                                 <img src="img/slider/hadassah_partner.png" alt="" />
                                 <span class="main__text">
@@ -156,7 +226,7 @@
                                 <a href="#">Читать далее</a>
                             </div>
                         </div>
-                        <div class="swiper-slide slide">
+                        <div class="slide">
                             <div class="slide__inner">
                                 <img src="img/slider/AstraZeneca.png" alt="" />
                                 <span class="main__text">
@@ -168,7 +238,7 @@
                                 <a href="#">Читать далее</a>
                             </div>
                         </div>
-                        <div class="swiper-slide slide">
+                        <div class="slide">
                             <div class="slide__inner">
                                 <img src="img/slider/rostelecom.svg" alt="" />
                                 <span class="main__text">
@@ -180,7 +250,7 @@
                                 <a href="#">Читать далее</a>
                             </div>
                         </div>
-                        <div class="swiper-slide slide">
+                        <div class="slide">
                             <div class="slide__inner">
                                 <img src="img/slider/GE_h.svg" alt="" />
                                 <span class="main__text">
@@ -193,781 +263,804 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="program__objectives">
+            <div class="container">
+                <div class="program__objectives__inner">
+                    <div class="objectives__title  title">
+                        <span>Цели программы</span>
+                    </div>
+                    <div class="man__container">
+                        <div class="white__road__line">
+                            <img src="img/white_road_line.svg" alt="">
+                        </div>
+                        <img src="img/man.png" alt="">
+    
+                    </div>
+                    <div class="objectives__text__container">
+                        <div class="gold__road__line"></div>
+                        <div class="objectives__text__inner">
+                            <div class="objectives__text main__text">
+    
+                                <img src="img/marker_01.svg" alt="">
+                                <span>
+                                    Поиск, отбор и адаптация перспективных проектов под задачи
+                                    корпораций
+                                </span>
+    
+                            </div>
+                            <div class="objectives__text main__text">
+                                <img src="img/marker_02.svg" alt="">
+                                <span>
+                                    Взаимодействие с центрами экспертизы и врачебным
+                                    сообществом. Развитие
+                                    технологии продукта, которые соответствуют потребностям пациентам и здравоохранению
+                                </span>
+    
+                            </div>
+                            <div class="objectives__text main__text">
+                                <img src="img/marker_03.svg" alt="">
+                                <span>
+                                    Сбор и учет обратной связи от врачей и пациентов.
+                                    Доработка продукта с
+                                    учетом принципов пациентоориентированности и дизайн-мышления при поддержке ведущих
+                                    экспертов
+                                    организаций-партнеров
+                                </span>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="man__container__desk">
+                        <img src="img/man_desktop.svg" alt="">
+                    </div>
+                    <div class="fictitious__container">
+    
+                    </div>
+                    <div class="objectives__text__desk">
+                        <div class="main__text">Поиск, отбор и адаптация перспективных проектов под задачи корпораций</div>
+                        <div class="main__text">Взаимодействие с центрами экспертизы и врачебным сообществом. Развитие
+                            технологии продукта, которые соответствуют потребностям пациентам и здравоохранению</div>
+                        <div class="main__text">Сбор и учет обратной связи от врачей и пациентов. Доработка продукта с
+                            учетом принципов пациентоориентированности и дизайн-мышления при поддержке ведущих экспертов
+                            организаций-партнеров</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reasons">
+            <div class="container">
+                <div class="reasons__inner">
+                    <div class="reasons__title title">
+                        Зачем участвовать
+                    </div>
+                    <div class="reasons__carousel">
+                        <div class="swiper carousel__reasons">
+                            <div class="swiper-wrapper carousel__inner "> <!-- Carousel -->
+                                <div class="swiper-slide reason__slide">
+                                    <div class="reason__slide__inner">
+                                        <img src="img/second_slider/first_reason_img.svg" alt="" />
+                                        <span class="main__text">
+                                            Первый в России медицинский клинико-диагностический центр под управлением
+                                            иностранного
+                                            университетского госпиталя со столетней историей – Hadassah, единственной
+                                            израильской
+                                            больницы, состоящей в American Hospital Association
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide reason__slide">
+                                    <div class="reason__slide__inner">
+                                        <img src="img/second_slider/second_reason_img.svg" alt="" />
+                                        <span class="main__text">
+                                            Первый в России медицинский клинико-диагностический центр под управлением
+                                            иностранного
+                                            университетского госпиталя со столетней историей – Hadassah, единственной
+                                            израильской
+                                            больницы, состоящей в American Hospital Association
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide reason__slide">
+                                    <div class="reason__slide__inner">
+                                        <img src="img/second_slider/third_reason_img.svg" alt="" />
+                                        <span class="main__text">
+                                            Первый в России медицинский клинико-диагностический центр под управлением
+                                            иностранного
+                                            университетского госпиталя со столетней историей – Hadassah, единственной
+                                            израильской
+                                            больницы, состоящей в American Hospital Association
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination__custom">
+    
+                            </div>
+                        </div>
+                        <div class="carousel__inner carousel__none"> <!-- Carousel -->
+                            <div class="swiper-slide reason__slide">
+                                <div class="reason__slide__inner">
+                                    <div class="reason__slide__image">
+                                        <img src="img/second_slider/first_reason_img.svg" alt="" />
+                                    </div>
+                                    <div class="reason__slide__text">
+                                        <span class="main__text">
+                                            Первый в России медицинский клинико-диагностический центр под управлением
+                                            иностранного
+                                            университетского госпиталя со столетней историей – Hadassah, единственной
+                                            израильской
+                                            больницы, состоящей в American Hospital Association
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide reason__slide">
+                                <div class="reason__slide__inner">
+                                    <div class="reason__slide__image">
+                                        <img src="img/second_slider/second_reason_img.svg" alt="" />
+                                    </div>
+                                    <div class="reason__slide__text">
+                                        <span class="main__text">
+                                            Первый в России медицинский клинико-диагностический центр под управлением
+                                            иностранного
+                                            университетского госпиталя со столетней историей – Hadassah, единственной
+                                            израильской
+                                            больницы, состоящей в American Hospital Association
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide reason__slide">
+                                <div class="reason__slide__inner">
+                                    <div class="reason__slide__top">
+                                        <div class="reason__slide__image">
+                                            <img src="img/second_slider/third_reason_img.svg" alt="" />
+                                        </div>
+                                        <div class="reason__slide__title">
+                                            Каждый участник программы сможет
+                                        </div>
+                                    </div>
+                                    <div class="reason__slide__text__lower">
+                                        <span class="main__text">
+                                            <ul>
+                                                <li class="main__text"> В индивидуальном режиме работать с 2-4 менторами из
+                                                    индустриальных компаний,
+                                                    венчурных фондов и исследовательских организаций</li>
+                                                <li class="main__text">Протестировать своё решение на базе клиники Hadassah
+                                                    Medical Moscow и получить
+                                                    обратную связь от врачей и пациентов</li>
+                                                <li class="main__text">Принять участие в образовательной части программы.
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="integration__button">
+                            <div class="integration__button__inner">
+                                <div class="integration__button__title">
+                                    Интеграции
+                                </div>
+                                <div class="integration__button__chekbox">
+                                    <img src="img/chekbox.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reasons__desk">
+                        <div class="reasons__left__container">
+                            <div class="first__reason">
+                                <div class="first__reason__inner">
+                                    <img src="img/second_slider/first_reason_img.svg" alt="" />
+                                    <span class="main__text">
+                                        Лучшие из 3-5 стартапов, прошедших отбор, получат возможность пройти акселерационную
+                                        программу, созданную Фондом "Сколково" с использованием 10-ти летнего опыта развития
+                                        стартапов и лучших международных практик
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="second__reason">
+                                <div class="second__reason__inner">
+                                    <img src="img/second_slider/second_reason_img.svg" alt="" />
+                                    <span class="main__text">
+                                        При успешном прохождении акселерационной программы стартапы получат возможность
+                                        запустить совместный проект (пилот) с индустриальными партнёрами проекта iLAB
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reasons__right__container">
+                            <div class="third__reason">
+                                <div class="third__reason__inner">
+                                    <div class="reason__slide__top">
+                                        <div class="reason__slide__image">
+                                            <img src="img/second_slider/third_reason_img.svg" alt="" />
+                                        </div>
+                                        <div class="reason__slide__title">
+                                            Каждый участник программы сможет
+                                        </div>
+                                    </div>
+                                    <div class="reason__slide__text__lower">
+                                        <span class="main__text">
+                                            <ul>
+                                                <li class="main__text"> В индивидуальном режиме работать с 2-4 менторами из
+                                                    индустриальных компаний,
+                                                    венчурных фондов и исследовательских организаций</li>
+                                                <li class="main__text">Протестировать своё решение на базе клиники Hadassah
+                                                    Medical Moscow и получить
+                                                    обратную связь от врачей и пациентов</li>
+                                                <li class="main__text">Принять участие в образовательной части программы.
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="integration__button__desk">
+                            <div class="integration__button__inner">
+                                <div class="integration__button__title">
+                                    Интеграции
+                                </div>
+                                <div class="integration__button__chekbox">
+                                    <img src="img/chekbox.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="we__search">
+            <div class="container">
+                <div class="we__search__inner">
+                    <div class="search__inner__container">
+                        <div class="search__title">
+                            Кого мы ищем
+                        </div>
+                        <div class="search__text">
+                            Мы ищем инновационные проекты и решения в области онкологии, сердечно-сосудистых заболеваний,
+                            заболеваний обмена веществ и почек, респираторных заболеваний, патологии иммунной системы,
+                            гастроэнтерологии, цифровые решения для подразделения R&D фармацевтической компании, решения по
+                            поддержке пациентов-участников клинических исследований в условиях пандемии.
+                        </div>
+                        <div class="search__lower__container">
+                            <div class="search__reverse"> <!-- for reverse block -->
+                                <div class="search__title">
+                                    <span>Прием заявок до <br></span>
+                                    <span>31 марта 2021</span>
+                                </div>
+                                <form action="#" class="search__button">
+                                    <button>Подать заявку</button>
+                                </form>
+                            </div>
+                            <div class="allusion">
+                                <img src="img/alert_circle.svg" alt="">
+                                <span>Участие в программе бесплатно</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="privilege__list">
+            <div class="container">
+                <div class="privilege__list__inner">
+                    <div class="privilege">
+                        <div class="privilege__icon">
+                            <img src="img/privilege/1.svg" alt="">
+                        </div>
+                        <span class="main__text">
+                            Соответствие приоритетным направлениям конкурсного отбора
+                        </span>
+                    </div>
+                    <div class="privilege">
+                        <div class="privilege__icon">
+                            <img src="img/privilege/2.svg" alt="">
+                        </div>
+                        <span class="main__text">
+                            Наличие прав на использование / потенциал защиты объектов интеллектуальной собственности на
+                            территории России
+                        </span>
+                    </div>
+                    <div class="privilege">
+                        <div class="privilege__icon">
+                            <img src="img/privilege/3.svg" alt="">
+                        </div>
+                        <span class="main__text">
+                            Технология / продукт не ниже уровня MVP (приветствуется наличие первых продаж / внедрений)
+                        </span>
+                    </div>
+                    <div class="privilege">
+                        <div class="privilege__icon">
+                            <img src="img/privilege/4.svg" alt="">
+                        </div>
+                        <span class="main__text">
+                            Сформированная команда (2+ человека в команде, закрыты ключевые функции)
+                        </span>
+                    </div>
+                    <div class="privilege">
+                        <div class="privilege__icon">
+                            <img src="img/privilege/5.svg" alt="">
+                        </div>
+                        <span class="main__text">
+                            Наличие всех необходимых разрешений / лицензий для осуществления деятельности
+                        </span>
+                    </div>
+                    <div class="privilege">
+                        <div class="privilege__icon">
+                            <img src="img/privilege/6.svg" alt="">
+                        </div>
+                        <span class="main__text">
+                            Приоритет проектам, представляющим бизнес-интерес для компаний-партнёров iLAB и / или решающим
+                            важные задачи для системы Здравоохранения
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="selection__directions">
+            <div class="selection__directions__inner">
+                <div class="title">
+                    Направления отбора
+                </div>
+                <div class="bio__onc__container">
+                    <div class="biopharma__container">
+                        <div class="biopharma__container__inner">
+                            <div class="biopharma">
+                                Биофарма
+                            </div>
+                            <img src="img/icons/minus.svg" alt="">
+                        </div>
+                        <div class="biopharma__text">
+                            <span class="main__text">
+                                Цифровые решения в области выявления, диагностики и лечения ХСН, ХБП, бронхиальной астмы,
+                                сахарного диабета, системы поддержки принятия врачебных решений, системы маршрутизации и
+                                поддержки пациентов, другие цифровые решения для врачей и пациентов в указанных нозологиях,
+                                поддержка врачей и пациентов в условиях пандемии
+                            </span>
+                        </div>
+                    </div>
+                    <div class="oncology">
+                        <div class="container">
+                            <div class="oncology__inner">
+                                <div class="oncology__first__line">
+                                    <div class="oncology__title">
+                                        Онкология
+                                    </div>
+                                    <div class="oncology__icon">
+                                        <img src="img/icons/plus.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="oncology__second__line">
+                                    <img src="img/oncology.svg" alt="">
+                                </div>
+                                <div class="oncology__img">
+                                    <img src="img/man_2.png" alt="">
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="stages">
+            <div class="container">
+                <div class="stages__inner">
+                    <div class="stages__title title">
+                        Этапы
+                    </div>
+                    <div class="stages__list">
+                        <div class="stage">
+                            <span>15 – 31 Марта 2021</span><br>
+                            <span>Поиск и привлечение проектов</span>
+                        </div>
+                        <div class="stage">
+                            <span>1 – 10 Апреля 2021</span><br>
+                            <span>Диагностика стартапов <br>Pitch Day</span>
+                        </div>
+                        <div class="stage">
+                            <span>Апрель 2021</span><br>
+                            <span>Образовательный BootCamp</span>
+                        </div>
+                        <div class="stage">
+                            <span>Май – Сентябрь 2021</span><br>
+                            <span>Акселерационный блок (4 – 6 месяцев)</span>
+                        </div>
+                        <div class="stage">
+                            <span>Октябрь 2021</span><br>
+                            <span>Демо день. Итоговая диагностика</span>
+                        </div>
+                    </div>
+                    <div class="stage__first__line">
+    
+                    </div>
+                    <div class="stage__second__line">
+    
+                    </div>
+                    <div class="double__arrow">
+                        <img src="img/icons/double_arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="juries__and__mentors">
+            <div class="container">
+                <div class="juries_and_mentors__inner">
+                    <div class="juri__title title">
+                        Жюри и менторы
+                    </div>
+                    <div class="juri__description">
+                        <div>
+                            <span>20+ менторов</span><br>
+                            <span>Представители корпораций, инвесторов и успешных стартапов</span><br>
+                        </div>
+                        <div>
+                            <span>4+ ментора</span><br>
+                            <span>На 1 участника стартапа</span><br>
+                        </div>
+                        <div>
+                            <span>20+ менторов</span><br>
+                            <span>Индивидуальной работы (тестирования гипотез, custdev)</span>
+                        </div>
+                    </div>
+                    <div class="juri__carousel">
+                        <div class="swiper carousel__juri">
+                            <div class="swiper-wrapper carousel__inner__inner"> <!-- Carousel -->
+                                <div class="swiper-slide juri__slide">
+                                    <div class="juri__slide__inner">
+                                        <img src="img/juri/juri_1.svg" alt="" />
+                                        <span class="juri__name">
+                                            Родион<br>
+                                            Сигал
+                                        </span>
+                                        <span class="work__place">
+                                            Hadassah Medical Moscow
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide juri__slide">
+                                    <div class="juri__slide__inner">
+                                        <img src="img/juri/juri_2.svg" alt="" />
+                                        <span class="juri__name">
+                                            Борис<br>
+                                            Глазков
+                                        </span>
+                                        <span class="work__place">
+                                            Hadassah Medical Moscow
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide juri__slide">
+                                    <div class="juri__slide__inner">
+                                        <img src="img/juri/juri_3.svg" alt="" />
+                                        <span class="juri__name">
+                                            Любовь <br>Симонова-Емельянова
+                                        </span>
+                                        <span class="work__place">
+                                            ПАО «Ростелеком»
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide juri__slide">
+                                    <div class="juri__slide__inner">
+                                        <img src="img/juri/juri_4.svg" alt="" />
+                                        <span class="juri__name">
+                                            Анна <br>Бращенкова
+                                        </span>
+                                        <span class="work__place">
+                                            АстраЗенека
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide juri__slide">
+                                    <div class="juri__slide__inner">
+                                        <img src="img/juri/juri_5.svg" alt="" />
+                                        <span class="juri__name">
+                                            Лоран <br>Акопян
+                                        </span>
+                                        <span class="work__place">
+                                            iPavlov
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide juri__slide">
+                                    <div class="juri__slide__inner">
+                                        <img src="img/juri/juri_6.svg" alt="" />
+                                        <span class="juri__name">
+                                            Алексей<br>
+                                            Виноградов
+                                        </span>
+                                        <span class="work__place">
+                                            Unicorn Capital Partners
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide juri__slide">
+                                    <div class="juri__slide__inner">
+                                        <img src="img/juri/juri_7.svg" alt="" />
+                                        <span class="juri__name">
+                                            Софья <br>
+                                            Зубанова
+                                        </span>
+                                        <span class="work__place">
+                                            RBV Capital
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide juri__slide">
+                                    <div class="juri__slide__inner">
+                                        <img src="img/juri/juri_8.svg" alt="" />
+                                        <span class="juri__name">
+                                            Екатерина<br>
+                                            Соболева
+                                        </span>
+                                        <span class="work__place">
+                                            GE Healthcare
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide juri__slide">
+                                    <div class="juri__slide__inner">
+                                        <img src="img/juri/juri_9.svg" alt="" />
+                                        <span class="juri__name">
+                                            Глеб<br>
+                                            Тимофеев
+                                        </span>
+                                        <span class="work__place">
+                                            GE Healthcare
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination__custom">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="team">
+            <div class="container">
+                <div class="team__inner">
+                    <div class="team__carousel">
+                        <div class="swiper carousel__team">
+                            <div class="swiper-wrapper carousel__inner__inner">
+                                <div class="swiper-slide team__slide">
+                                    <div class="team__slide__inner">
+                                        <img src="img/team/member_1.svg" alt="" />
+                                        <span class="member__name">
+                                            Камила<br>
+                                            Зарубина
+                                        </span>
+                                        <span class="post">Директор по акселерации, PhD </span>
+                                        <span class="work__place">
+                                            Лидер программы со стороны Сколково
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide team__slide">
+                                    <div class="team__slide__inner">
+                                        <img src="img/team/member_2.svg" alt="" />
+                                        <span class="member__name">
+                                            Евгений<br>
+                                            Шеенко
+                                        </span>
+                                        <span class="post">CFA</span>
+                                        <span class="work__place">
+                                            Методология программы
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide team__slide">
+                                    <div class="team__slide__inner">
+                                        <img src="img/team/member_3.svg" alt="" />
+                                        <span class="member__name">
+                                            Софья <br>Ярцева
+                                        </span>
+                                        <span class="post">Medical Innovation Lead</span>
+                                        <span class="work__place">
+                                            Лидер программы со стороны АстраЗенека
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide team__slide">
+                                    <div class="team__slide__inner">
+                                        <img src="img/team/member_4.svg" alt="" />
+                                        <span class="member__name">
+                                            Иван <br>Таскин
+                                        </span>
+                                        <span class="work__place">
+                                            Работа со стартапами
+                                        </span>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="pagination__custom">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="documents">
+            <div class="container">
+                <div class="documents__inner">
+                    <div class="documents__title title">Документы</div>
+                </div>
+                <div class="swiper documents__swiper">
+                    <div class="swiper-wrapper document__carousel">
+                        <div class="swiper-slide document__slide">
+                            <div class="document__name">
+                                Согласие на обработку персональных данных
+                            </div>
+                            <div class="document__download">
+                                <div class="document__extension">
+                                    PDF • 8,5 Mb
+                                </div>
+                                <button class="document__download__button">
+                                    <a href="#"><img src="img/download_button.svg" alt=""></a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide document__slide">
+                            <div class="document__name">
+                                Положение о конкурсном отборе
+                            </div>
+                            <div class="document__download">
+                                <div class="document__extension">
+                                    PDF • 9,7 Mb
+                                </div>
+                                <button class="document__download__button">
+                                    <a href="#"><img src="img/download_button.svg" alt=""></a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide document__slide">
+                            <div class="document__name">
+                                Шаблон презентации
+                            </div>
+                            <div class="document__download">
+                                <div class="document__extension">
+                                    PDF • 10,3 Mb
+                                </div>
+                                <button class="document__download__button">
+                                    <a href="#"><img src="img/download_button.svg" alt=""></a>
+                                </button>
+                            </div>
+    
+                        </div>
+    
+                    </div>
                     <div class="pagination__custom">
     
                     </div>
                 </div>
             </div>
-            <div class="about__partners__desktop">
-                <div class="about__partners__title title">
+        </div>
+        <div class="oraganizers">
+            <div class="oraganizers__inner">
+                <div class="oraganizers__title title">
+                    Организаторы
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper oraganizers__swiper">
+                        <div class="swiper-slide oraganizers__slide">
+                            <div class="oraganizers__slide__inner">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide oraganizers__slide">
+                            <div class="oraganizers__slide__inner">
+                                <img src="img/slider/hadassah_partner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide oraganizers__slide">
+                            <div class="oraganizers__slide__inner">
+                                <img src="img/slider/skolkovo.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide oraganizers__slide">
+                            <div class="oraganizers__slide__inner">
+                                <img src="img/slider/ge.svg" alt="">
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="pagination__custom">
+    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="partners__footer">
+            <div class="partners__footer__inner">
+                <div class="partners__title title">
+                    Партнеры
+                </div>
+                <div class="partners__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide partners__slide">
+                            <div class="partners__slide__inner">
+                                <img src="img/slider/rostelecom.svg" width="95px" height="24px" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide partners__slide">
+                            <div class="partners__slide__inner">
+                                <img src="img/slider/horse.svg" width="95px" height="24px" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide partners__slide">
+                            <div class="partners__slide__inner">
+                                <img src="img/slider/hospital.svg" width="95px" height="24px" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide partners__slide">
+                            <div class="partners__slide__inner">
+                                <img src="img/slider/rbv.svg" width="95px" height="24px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination__custom">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__inner">
+                <div class="footer__title title">
+                    Контакты
+                </div>
+                <div class="contact">
                     <div>
-                        <span>О партнерах</span>
-                    </div>
-                </div>
-                <div class="about__partners__desktop__inner">
-                    
-                    <div class="slide">
-                        <div class="slide__inner">
-                            <img src="img/slider/hadassah_partner.png" alt="" />
-                            <span class="main__text">
-                                Первый в России медицинский клинико-диагностический центр под управлением иностранного
-                                университетского госпиталя со столетней историей – Hadassah, единственной израильской
-                                больницы, состоящей в American Hospital Association
-                            </span>
-
-                            <a href="#">Читать далее</a>
+    
+                        <div class="contact__face">
+                            Контактное лицо
                         </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide__inner">
-                            <img src="img/slider/AstraZeneca.png" alt="" />
-                            <span class="main__text">
-                                Международная научно-ориентированная биофармацевтическая компания, нацеленная на
-                                исследование, разработку и вывод на рынок рецептурных препаратов преимущественно в таких
-                                терапевтических областях, как онкология, кардиология, нефрология и метаболизм
-                            </span>
-
-                            <a href="#">Читать далее</a>
+                        <div class="contact__name">
+                            Елена Тихомирова
                         </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide__inner">
-                            <img src="img/slider/rostelecom.svg" alt="" />
-                            <span class="main__text">
-                                Крупнейший в России интегрированный провайдер цифровых услуг и решений, который
-                                присутствует во всех сегментах рынка и охватывает миллионы домохозяйств, государственных
-                                и частных организаций. Занимает лидирующие позиции на рынке услуг доступа
-                            </span>
-
-                            <a href="#">Читать далее</a>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide__inner">
-                            <img src="img/slider/GE_h.svg" alt="" />
-                            <span class="main__text">
-                                GE Healthcare – бизнес-подразделение GE (NYSE: GE) с оборотом $16,7 млрд. Являясь одним
-                                из ведущих мировых производителей передового медицинского оборудования и цифровых
-                                решений, GE Healthcare помогает врачам получать качественную информацию и принимать
-                            </span>
-
-                            <a href="#">Читать далее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="program__objectives">
-        <div class="container">
-            <div class="program__objectives__inner">
-                <div class="objectives__title  title">
-                    <span>Цели программы</span>
-                </div>
-                <div class="man__container">
-                    <div class="white__road__line">
-                        <img src="img/white_road_line.svg" alt="">
-                    </div>
-                    <img src="img/man.png" alt="">
-
-                </div>
-                <div class="objectives__text__container">
-                    <div class="gold__road__line"></div>
-                    <div class="objectives__text__inner">
-                        <div class="objectives__text main__text">
-
-                            <img src="img/marker_01.svg" alt="">
-                            <span>
-                                Поиск, отбор и адаптация перспективных проектов под задачи
-                                корпораций
-                            </span>
-
-                        </div>
-                        <div class="objectives__text main__text">
-                            <img src="img/marker_02.svg" alt="">
-                            <span>
-                                Взаимодействие с центрами экспертизы и врачебным
-                                сообществом. Развитие
-                                технологии продукта, которые соответствуют потребностям пациентам и здравоохранению
-                            </span>
-
-                        </div>
-                        <div class="objectives__text main__text">
-                            <img src="img/marker_03.svg" alt="">
-                            <span>
-                                Сбор и учет обратной связи от врачей и пациентов.
-                                Доработка продукта с
-                                учетом принципов пациентоориентированности и дизайн-мышления при поддержке ведущих
-                                экспертов
-                                организаций-партнеров
-                            </span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="reasons">
-        <div class="container">
-            <div class="reasons__inner">
-                <div class="reasons__title title">
-                    Зачем участвовать
-                </div>
-                <div class="reasons__carousel">
-                    <div class="swiper carousel__reasons">
-                        <div class="swiper-wrapper carousel__inner "> <!-- Carousel -->
-                            <div class="swiper-slide reason__slide">
-                                <div class="reason__slide__inner">
-                                    <img src="img/second_slider/first_reason_img.svg" alt="" />
-                                    <span class="main__text">
-                                        Первый в России медицинский клинико-диагностический центр под управлением
-                                        иностранного
-                                        университетского госпиталя со столетней историей – Hadassah, единственной
-                                        израильской
-                                        больницы, состоящей в American Hospital Association
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide reason__slide">
-                                <div class="reason__slide__inner">
-                                    <img src="img/second_slider/second_reason_img.svg" alt="" />
-                                    <span class="main__text">
-                                        Первый в России медицинский клинико-диагностический центр под управлением
-                                        иностранного
-                                        университетского госпиталя со столетней историей – Hadassah, единственной
-                                        израильской
-                                        больницы, состоящей в American Hospital Association
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide reason__slide">
-                                <div class="reason__slide__inner">
-                                    <img src="img/second_slider/third_reason_img.svg" alt="" />
-                                    <span class="main__text">
-                                        Первый в России медицинский клинико-диагностический центр под управлением
-                                        иностранного
-                                        университетского госпиталя со столетней историей – Hadassah, единственной
-                                        израильской
-                                        больницы, состоящей в American Hospital Association
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pagination__custom">
-
-                        </div>
-                    </div>
-                    <div class="carousel__inner carousel__none"> <!-- Carousel -->
-                        <div class="swiper-slide reason__slide">
-                            <div class="reason__slide__inner">
-                                <div class="reason__slide__image">
-                                    <img src="img/second_slider/first_reason_img.svg" alt="" />
-                                </div>
-                                <div class="reason__slide__text">
-                                    <span class="main__text">
-                                        Первый в России медицинский клинико-диагностический центр под управлением
-                                        иностранного
-                                        университетского госпиталя со столетней историей – Hadassah, единственной
-                                        израильской
-                                        больницы, состоящей в American Hospital Association
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide reason__slide">
-                            <div class="reason__slide__inner">
-                                <div class="reason__slide__image">
-                                    <img src="img/second_slider/second_reason_img.svg" alt="" />
-                                </div>
-                                <div class="reason__slide__text">
-                                    <span class="main__text">
-                                        Первый в России медицинский клинико-диагностический центр под управлением
-                                        иностранного
-                                        университетского госпиталя со столетней историей – Hadassah, единственной
-                                        израильской
-                                        больницы, состоящей в American Hospital Association
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide reason__slide">
-                            <div class="reason__slide__inner">
-                                <div class="reason__slide__top">
-                                    <div class="reason__slide__image">
-                                        <img src="img/second_slider/third_reason_img.svg" alt="" />
-                                    </div>
-                                    <div class="reason__slide__title">
-                                        Каждый участник программы сможет
-                                    </div>
-                                </div>
-                                <div class="reason__slide__text__lower">
-                                    <span class="main__text">
-                                        <ul>
-                                            <li class="main__text" > В индивидуальном режиме работать с 2-4 менторами из индустриальных компаний, 
-                                                венчурных фондов и исследовательских организаций</li>
-                                            <li class="main__text">Протестировать своё решение на базе клиники Hadassah Medical Moscow и  получить 
-                                                обратную связь от врачей и пациентов</li>
-                                            <li class="main__text">Принять участие в образовательной части программы. </li>
-                                        </ul>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="integration__button">
-                        <div class="integration__button__inner">
-                            <div class="integration__button__title">
-                                Интеграции
-                            </div>
-                            <div class="integration__button__chekbox">
-                                <img src="img/chekbox.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="we__search">
-        <div class="container">
-            <div class="we__search__inner">
-                <div class="search__title">
-                    Кого мы ищем
-                </div>
-                <div class="search__text">
-                    Мы ищем инновационные проекты и решения в области онкологии, сердечно-сосудистых заболеваний,
-                    заболеваний обмена веществ и почек, респираторных заболеваний, патологии иммунной системы,
-                    гастроэнтерологии, цифровые решения для подразделения R&D фармацевтической компании, решения по
-                    поддержке пациентов-участников клинических исследований в условиях пандемии.
-                </div>
-                <div class="search__lower__container">
-                    <div class="search__reverse"> <!-- for reverse block -->
-                       <div class="search__title">
-                           <span>Прием заявок до <br></span>
-                           <span>31 марта 2021</span>
-                       </div>
-                       <form action="#" class="search__button">
-                           <button>Подать заявку</button>
-                       </form>
-                   </div>
-                   <div class="allusion">
-                       <img src="img/alert_circle.svg" alt="">
-                       <span>Участие в программе бесплатно</span>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="privilege__list">
-        <div class="container">
-            <div class="privilege__list__inner">
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="img/privilege/1.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Соответствие приоритетным направлениям конкурсного отбора
-                    </span>
-                </div>
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="img/privilege/2.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Наличие прав на использование / потенциал защиты объектов интеллектуальной собственности на
-                        территории России
-                    </span>
-                </div>
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="img/privilege/3.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Технология / продукт не ниже уровня MVP (приветствуется наличие первых продаж / внедрений)
-                    </span>
-                </div>
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="img/privilege/4.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Сформированная команда (2+ человека в команде, закрыты ключевые функции)
-                    </span>
-                </div>
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="img/privilege/5.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Наличие всех необходимых разрешений / лицензий для осуществления деятельности
-                    </span>
-                </div>
-                <div class="privilege">
-                    <div class="privilege__icon">
-                        <img src="img/privilege/6.svg" alt="">
-                    </div>
-                    <span class="main__text">
-                        Приоритет проектам, представляющим бизнес-интерес для компаний-партнёров iLAB и / или решающим
-                        важные задачи для системы Здравоохранения
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="selection__directions">
-        <div class="selection__directions__inner">
-            <div class="title">
-                Направления отбора
-            </div>
-            <div class="biopharma__container">
-                <div class="biopharma__container__inner">
-                    <div class="biopharma">
-                        Биофарма
-                    </div>
-                    <img src="img/icons/minus.svg" alt="">
-                </div>
-                <div class="biopharma__text">
-                    <span class="main__text">
-                        Цифровые решения в области выявления, диагностики и лечения ХСН, ХБП, бронхиальной астмы,
-                        сахарного диабета, системы поддержки принятия врачебных решений, системы маршрутизации и
-                        поддержки пациентов, другие цифровые решения для врачей и пациентов в указанных нозологиях,
-                        поддержка врачей и пациентов в условиях пандемии
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="oncology">
-        <div class="container">
-            <div class="oncology__inner">
-                <div class="oncology__first__line">
-                    <div class="oncology__title">
-                        Онкология
-                    </div>
-                    <div class="oncology__icon">
-                        <img src="img/icons/plus.svg" alt="">
-                    </div>
-                </div>
-                <div class="oncology__second__line">
-                    <img src="img/oncology.svg" alt="">
-                </div>
-                <div class="oncology__img">
-                    <img src="img/man_2.png" alt="">
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="stages">
-        <div class="container">
-            <div class="stages__inner">
-                <div class="stages__title title">
-                    Этапы
-                </div>
-                <div class="stages__list">
-                    <div class="stage">
-                        <span>15 – 31 Марта 2021</span><br>
-                        <span>Поиск и привлечение проектов</span>
-                    </div>
-                    <div class="stage">
-                        <span>1 – 10 Апреля 2021</span><br>
-                        <span>Диагностика стартапов <br>Pitch Day</span>
-                    </div>
-                    <div class="stage">
-                        <span>Апрель 2021</span><br>
-                        <span>Образовательный BootCamp</span>
-                    </div>
-                    <div class="stage">
-                        <span>Май – Сентябрь 2021</span><br>
-                        <span>Акселерационный блок (4 – 6 месяцев)</span>
-                    </div>
-                    <div class="stage">
-                        <span>Октябрь 2021</span><br>
-                        <span>Демо день. Итоговая диагностика</span>
-                    </div>
-                </div>
-                <div class="stage__first__line">
-                    
-                </div>
-                <div class="stage__second__line">
-                    
-                </div>
-                <div class="double__arrow">
-                    <img src="img/icons/double_arrow.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="juries__and__mentors">
-        <div class="container">
-            <div class="juries_and_mentors__inner">
-                <div class="juri__title title">
-                    Жюри и менторы
-                </div>
-                <div class="juri__description">
-                    <div>
-                        <span>20+ менторов</span><br>
-                        <span>Представители корпораций, инвесторов и успешных стартапов</span><br>
                     </div>
                     <div>
-                        <span>4+ ментора</span><br>
-                        <span>На 1 участника стартапа</span><br>
+    
+                        <div class="contact__email">
+                            <a href="mailto:ilab@sk.ru">ilab@sk.ru</a>
+                        </div>
+                        <div class="contact__number">
+                            <a href="tel:+74959560033">+7 (495) 956 00 33 </a> (доб. 2076)
+                        </div>
                     </div>
+                    <form action="#" class="aplication__button">
+                        <button>
+                            Подать заявку
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__bottom">
                     <div>
-                        <span>20+ менторов</span><br>
-                        <span>Индивидуальной работы (тестирования гипотез, custdev)</span>
-                    </div>
-                </div>
-                <div class="juri__carousel">
-                    <div class="swiper carousel__juri">
-                        <div class="swiper-wrapper carousel__inner__inner"> <!-- Carousel -->
-                            <div class="swiper-slide juri__slide">
-                                <div class="juri__slide__inner">
-                                    <img src="img/juri/juri_1.svg" alt="" />
-                                    <span class="juri__name">
-                                        Родион<br>
-                                        Сигал
-                                    </span>
-                                    <span class="work__place">
-                                        Hadassah Medical Moscow
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide juri__slide">
-                                <div class="juri__slide__inner">
-                                    <img src="img/juri/juri_2.svg" alt="" />
-                                    <span class="juri__name">
-                                        Борис<br>
-                                        Глазков
-                                    </span>
-                                    <span class="work__place">
-                                        Hadassah Medical Moscow
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide juri__slide">
-                                <div class="juri__slide__inner">
-                                    <img src="img/juri/juri_3.svg" alt="" />
-                                    <span class="juri__name">
-                                        Любовь <br>Симонова-Емельянова
-                                    </span>
-                                    <span class="work__place">
-                                        ПАО «Ростелеком»
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide juri__slide">
-                                <div class="juri__slide__inner">
-                                    <img src="img/juri/juri_4.svg" alt="" />
-                                    <span class="juri__name">
-                                        Анна <br>Бращенкова
-                                    </span>
-                                    <span class="work__place">
-                                        АстраЗенека
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide juri__slide">
-                                <div class="juri__slide__inner">
-                                    <img src="img/juri/juri_5.svg" alt="" />
-                                    <span class="juri__name">
-                                        Лоран <br>Акопян
-                                    </span>
-                                    <span class="work__place">
-                                        iPavlov
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide juri__slide">
-                                <div class="juri__slide__inner">
-                                    <img src="img/juri/juri_6.svg" alt="" />
-                                    <span class="juri__name">
-                                        Алексей<br>
-                                        Виноградов
-                                    </span>
-                                    <span class="work__place">
-                                        Unicorn Capital Partners
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide juri__slide">
-                                <div class="juri__slide__inner">
-                                    <img src="img/juri/juri_7.svg" alt="" />
-                                    <span class="juri__name">
-                                        Софья <br>
-                                        Зубанова
-                                    </span>
-                                    <span class="work__place">
-                                        RBV Capital
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide juri__slide">
-                                <div class="juri__slide__inner">
-                                    <img src="img/juri/juri_8.svg" alt="" />
-                                    <span class="juri__name">
-                                        Екатерина<br>
-                                        Соболева
-                                    </span>
-                                    <span class="work__place">
-                                        GE Healthcare
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide juri__slide">
-                                <div class="juri__slide__inner">
-                                    <img src="img/juri/juri_9.svg" alt="" />
-                                    <span class="juri__name">
-                                        Глеб<br>
-                                        Тимофеев
-                                    </span>
-                                    <span class="work__place">
-                                        GE Healthcare
-                                    </span>
-                                </div>
-                            </div>
+                        <div class="bottom__copyright">
+                            © AstraZeneca – Skolkovo Startup Challenge 2021
                         </div>
-                        <div class="pagination__custom">
-
+                        <div class="privacy__policy">
+                            Политика конфиденциальности
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="team">
-        <div class="container">
-            <div class="team__inner">
-                <div class="team__carousel">
-                    <div class="swiper carousel__team">
-                        <div class="swiper-wrapper carousel__inner__inner">
-                            <div class="swiper-slide team__slide">
-                                <div class="team__slide__inner">
-                                    <img src="img/team/member_1.svg" alt="" />
-                                    <span class="member__name">
-                                        Камила<br>
-                                        Зарубина
-                                    </span>
-                                    <span class="post">Директор по акселерации, PhD </span>
-                                    <span class="work__place">
-                                        Лидер программы со стороны Сколково
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide team__slide">
-                                <div class="team__slide__inner">
-                                    <img src="img/team/member_2.svg" alt="" />
-                                    <span class="member__name">
-                                        Евгений<br>
-                                        Шеенко
-                                    </span>
-                                    <span class="post">CFA</span>
-                                    <span class="work__place">
-                                        Методология программы
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide team__slide">
-                                <div class="team__slide__inner">
-                                    <img src="img/team/member_3.svg" alt="" />
-                                    <span class="member__name">
-                                        Софья <br>Ярцева
-                                    </span>
-                                    <span class="post">Medical Innovation Lead</span>
-                                    <span class="work__place">
-                                        Лидер программы со стороны АстраЗенека
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide team__slide">
-                                <div class="team__slide__inner">
-                                    <img src="img/team/member_4.svg" alt="" />
-                                    <span class="member__name">
-                                        Иван <br>Таскин
-                                    </span>
-                                    <span class="work__place">
-                                        Работа со стартапами
-                                    </span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="pagination__custom">
-
-                        </div>
+                    <div class="webcanape">
+                        WebCanape – разработка сайтов и маркетинг
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="documents">
-        <div class="container">
-            <div class="documents__inner">
-                <div class="documents__title title">Документы</div>
-            </div>
-            <div class="swiper documents__swiper">
-                <div class="swiper-wrapper document__carousel">
-                    <div class="swiper-slide document__slide">
-                        <div class="document__name">
-                            Согласие на обработку персональных данных
-                        </div>
-                        <div class="document__download">
-                            <div class="document__extension">
-                                PDF • 8,5 Mb
-                            </div>
-                            <button class="document__download__button">
-                                <a href="#"><img src="img/download_button.svg" alt=""></a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide document__slide">
-                        <div class="document__name">
-                            Положение о конкурсном отборе
-                        </div>
-                        <div class="document__download">
-                            <div class="document__extension">
-                                PDF • 9,7 Mb
-                            </div>
-                            <button class="document__download__button">
-                                <a href="#"><img src="img/download_button.svg" alt=""></a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide document__slide">
-                        <div class="document__name">
-                            Шаблон презентации
-                        </div>
-                        <div class="document__download">
-                            <div class="document__extension">
-                                PDF • 10,3 Mb
-                            </div>
-                            <button class="document__download__button">
-                                <a href="#"><img src="img/download_button.svg" alt=""></a>
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="pagination__custom">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="oraganizers">
-        <div class="oraganizers__inner">
-            <div class="oraganizers__title title">
-                Организаторы
-            </div>
-            <div class="swiper">
-                <div class="swiper-wrapper oraganizers__swiper">
-                    <div class="swiper-slide oraganizers__slide">
-                        <div class="oraganizers__slide__inner">
-                            <img src="img/logo.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide oraganizers__slide">
-                        <div class="oraganizers__slide__inner">
-                            <img src="img/slider/hadassah_partner.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide oraganizers__slide">
-                        <div class="oraganizers__slide__inner">
-                            <img src="img/slider/skolkovo.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide oraganizers__slide">
-                        <div class="oraganizers__slide__inner">
-                            <img src="img/slider/ge.svg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="pagination__custom">
-
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <div class="partners__footer">
-        <div class="partners__footer__inner">
-            <div class="partners__title title">
-                Партнеры
-            </div>
-            <div class="partners__swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide partners__slide">
-                        <div class="partners__slide__inner">
-                            <img src="img/slider/rostelecom.svg" width="95px" height="24px" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide partners__slide">
-                        <div class="partners__slide__inner">
-                            <img src="img/slider/horse.svg" width="95px" height="24px" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide partners__slide">
-                        <div class="partners__slide__inner">
-                            <img src="img/slider/hospital.svg" width="95px" height="24px" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide partners__slide">
-                        <div class="partners__slide__inner">
-                            <img src="img/slider/rbv.svg" width="95px" height="24px" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="pagination__custom">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="footer__inner">
-            <div class="footer__title title">
-                Контакты
-            </div>
-            <div class="contact">
-                <div>
-
-                    <div class="contact__face">
-                        Контактное лицо
-                    </div>
-                    <div class="contact__name">
-                        Елена Тихомирова
-                    </div>
-                </div>
-                <div>
-
-                    <div class="contact__email">
-                        <a href="mailto:ilab@sk.ru">ilab@sk.ru</a>
-                    </div>
-                    <div class="contact__number">
-                        <a href="tel:+74959560033">+7 (495) 956 00 33 </a> (доб. 2076)
-                    </div>
-                </div>
-                <form action="#" class="aplication__button">
-                    <button>
-                        Подать заявку
-                    </button>
-                </form>
-            </div>
-            <div class="footer__bottom">
-                <div>
-                    <div class="bottom__copyright">
-                        © AstraZeneca – Skolkovo Startup Challenge 2021
-                    </div>
-                    <div class="privacy__policy">
-                        Политика конфиденциальности
-                    </div>
-                </div>
-                <div class="webcanape">
-                    WebCanape – разработка сайтов и маркетинг
                 </div>
             </div>
         </div>
