@@ -101,4 +101,38 @@
     display: flex;
     justify-content: space-between;
   }
+}
+@media (min-width: 1280px) {
+  .footer {
+    padding-bottom: 67px;
+  }
+  .footer .footer__inner {
+    width: 1280px;
+    display: grid;
+    grid-template-areas: "a b" "c c";
+    padding-top: 10px;
+  }
+  .footer .footer__inner .footer__title {
+    grid-area: a;
+    margin-top: -50px;
+  }
+  .footer .footer__inner .contact {
+    grid-area: b;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+  .footer .footer__inner .footer__bottom {
+    margin-top: 20px;
+    grid-area: c;
+    display: flex;
+  }
+  .footer .footer__inner .footer__bottom .footer__upper {
+    display: flex;
+  }
+  .footer .footer__inner .footer__bottom .footer__upper .bottom__copyright {
+    margin-right: 300px;
+  }
 }/*# sourceMappingURL=footer.css.map */

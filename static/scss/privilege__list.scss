@@ -43,7 +43,14 @@
 
 @media (min-width:1280px){
     .privilege__list{
+        .container{
+            padding: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
         .privilege__list__inner{
+            width: 1280px;
             grid-template-columns: 1fr 1fr 1fr;
         }
     }

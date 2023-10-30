@@ -5,6 +5,9 @@
     padding-bottom: 21px;
     .container{
         padding: 0;
+        .stages__desk{
+            display: none;
+        }
     }
 }
 .stages__inner{
@@ -13,6 +16,7 @@
     align-items: center;
     position: relative;
     width: 320px;
+    
     .stages__list{
         margin-left: 38px;
         .stage{
@@ -75,6 +79,7 @@
         left: 0;
         top: 170px; 
     }
+    
 }
 
 @media(min-width:768px){
@@ -144,4 +149,111 @@
     }
     
     
+}
+
+@media(min-width:1280px){
+    .stages{
+        margin-bottom: 150px;
+        .container{
+                padding: 0;
+                .stages__desk{
+                    display: block;
+                }
+            .stages__inner{
+                display: none;
+            }
+        }
+        .stages__desk{
+            width: 1280px;
+            z-index: 200;
+            display: block;
+            position: relative;
+            .stages__container{
+                display: flex;
+                column-gap: 45px;
+                .stage{
+                    width: 220px;
+                    .stage__date{
+                        color: #830051;
+                        font-family: Arial;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 40px;
+                        margin-bottom: 106px;
+                    }
+                    .stage__name{
+                        color: #0F488B;
+                        font-family: Arial;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 30px;
+                    }
+
+                }
+                .stage__inactive{
+                    .stage__date{
+                        color: #9DB0AC;
+                        font-family: Arial;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 40px;
+                    }
+                    .stage__name{
+                        color:#9DB0AC;
+                        font-family: Arial;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 30px;
+                    }
+                }
+                
+                
+                
+                
+            }
+            .stage__line__progress__inner{
+                position: absolute;
+                height: 2px;
+                width: 1000px;
+                background: #830051;
+                right: 0;
+                bottom: 137px;
+            }
+            .double__arrow__desk{
+                position: absolute;
+                bottom: 114px;
+                left: 260px;
+            }
+        }
+    }
+    .stage__line__container{
+        position: relative;
+        .stage__line{
+            bottom: 330px;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #9DB0AC;
+            z-index: 20;
+        } 
+        
+    }
+    
+}
+.line__progress__container{
+    position: relative;
+    z-index: 25;
+    .stage__line__progress{
+        position: absolute;
+        width: calc((100% - 1280px) / 2);
+        height: 2px;
+        background: #830051;
+        bottom: 330px;
+        
+        right: 0;
+    }
 }

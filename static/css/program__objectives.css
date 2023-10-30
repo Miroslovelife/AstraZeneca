@@ -63,6 +63,9 @@
 }
 
 @media (min-width: 768px) {
+  .program__objectives .container {
+    padding: 0;
+  }
   .program__objectives__inner .man__container {
     width: 700px;
   }

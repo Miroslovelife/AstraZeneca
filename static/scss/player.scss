@@ -1,0 +1,24 @@
+.player{
+    display: none;
+}
+
+@media(min-width:1280px){
+    .player{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 74px 0;
+        .container{
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            width: 1280px;
+            
+        }
+        
+        #player__container{
+            width: 1280px;
+            height: 721px;
+        }
+    }
+}

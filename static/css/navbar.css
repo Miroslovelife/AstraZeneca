@@ -1,0 +1,93 @@
+.navbar__wrap {
+  display: none;
+}
+
+.navbar__wrap__after {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+.navbar__wrap__after .menu__items {
+  margin-bottom: 35px;
+}
+.navbar__wrap__after .menu__items a {
+  text-decoration: none;
+  color: #0F488B;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.navbar__wrap__after .menu__items ul {
+  list-style: none;
+}
+.navbar__wrap__after .menu__items ul li:not(:last-child) {
+  margin-bottom: 25px;
+}
+.navbar__wrap__after #burger_button__right {
+  position: absolute;
+  right: 12px;
+  border: none;
+  background-image: url("../img/icons/close_nav.svg");
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+.navbar__wrap__after #burger_button__right img {
+  display: none;
+}
+.navbar__wrap__after .footer__nav {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.navbar__wrap__after .footer__nav .footer__nav__inner .contact__name__nav {
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: #3F4444;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.navbar__wrap__after .footer__nav .footer__nav__inner .contact__name__nav :last-child {
+  color: #3F4444;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.navbar__wrap__after .footer__nav .footer__nav__inner .contact__email {
+  margin-bottom: 17px;
+}
+.navbar__wrap__after .footer__nav .footer__nav__inner .contact__email a {
+  text-decoration: none;
+  color: #830051;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.navbar__wrap__after .footer__nav .footer__nav__inner .contact__number {
+  color: #3F4444;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.navbar__wrap__after .footer__nav .footer__nav__inner .contact__number a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #3F4444;
+}/*# sourceMappingURL=navbar.css.map */

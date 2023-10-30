@@ -78,7 +78,9 @@
         }
     }
 }
-
+.team__desk{
+    display: none;
+}
 @media (min-width:768px) {
     .team{
         .team__carousel{
@@ -87,4 +89,91 @@
     }
 
     
+}
+
+@media (min-width:1280px){
+    .team{
+        display: none;
+    }
+    .team__desk{
+        display: flex;
+        justify-content: center;
+        background: #ffff;
+        .container{
+            padding: 0;
+        }
+        .team__desk__inner{
+            width: 1280px;
+            .team__desk__swiper__container{
+                .team__desk__swiper{
+                    .swiper-button-prev{
+                        background-image: url("../img/icons/button-prev.svg");
+                        width: 58px;
+                        height: 58px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .swiper-button-prev::after{
+                        display: none;
+                    }
+                    .swiper-button-next{
+                        background-image: url("../img/icons/button-next.svg");
+                        width: 58px;
+                        height: 58px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .swiper-button-next::after{
+                        display: none;
+                    }
+                    .swiper-wrapper{
+                        column-gap: 40px;
+                        .swiper-slide-team{
+                            width: 290px;
+                            .team-slide-inner{
+                                width: 290px;
+                                height: 400px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                img{
+                                    margin: 30px 0 25px 0;
+                                }
+                                .member__name{
+                                    color: #3F4444;
+                                    text-align: center;
+                                    font-family: Arial;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 24px;
+                                    margin-bottom: 14px;
+                                }
+                                .post{
+                                    color: #9DB0AC;
+                                    text-align: center;
+                                    font-family: Arial;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 22px;
+                                }
+                                .work__place{
+                                    color: #9DB0AC;
+                                    text-align: center;
+                                    font-family: Arial;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 22px; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

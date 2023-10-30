@@ -1,4 +1,4 @@
-var swiperDocument = new Swiper(".swiper-document", {
+var swiperDocument = new Swiper(".documents__swiper", {
 
     spaceBetween: -5,
     pagination: {

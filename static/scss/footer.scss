@@ -104,3 +104,40 @@
 }
 
 }
+
+@media (min-width:1280px){
+    .footer{
+        padding-bottom: 67px;
+        .footer__inner{
+            width: 1280px;
+            display: grid;
+            grid-template-areas: "a b" 
+                                "c c";
+            padding-top: 10px;
+            .footer__title{
+                grid-area: a;
+                margin-top: -50px;
+
+            }
+            .contact{
+                grid-area: b;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                column-gap: 100px;
+                
+            }
+            .footer__bottom{
+                margin-top: 20px;
+                grid-area: c;
+                display: flex;
+                .footer__upper{
+                    display: flex;
+                    .bottom__copyright{
+                        margin-right: 300px;
+                    }
+                }
+            }
+        }
+    }
+}

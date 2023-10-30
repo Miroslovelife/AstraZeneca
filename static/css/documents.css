@@ -45,8 +45,77 @@
   line-height: 22px;
 }
 
+.documents__desk {
+  display: none;
+}
+
 @media (min-width: 768px) {
+  .documents .container {
+    padding: 0;
+  }
   .documents .documents__swiper {
     width: 700px;
+  }
+}
+@media (min-width: 1280px) {
+  .documents {
+    display: none;
+  }
+  .documents__desk {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+  .documents__desk .container {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .documents__desk .container .documents__desk__inner {
+    width: 1280px;
+  }
+  .documents__desk .container .documents__desk__inner .documents__list__container {
+    display: flex;
+    justify-content: left;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .documents__desk .container .documents__desk__inner .documents__list__container .document {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 131px;
+    border: 1px solid #E7E7E7;
+    width: 400px;
+    height: 200px;
+  }
+  .documents__desk .container .documents__desk__inner .documents__list__container .document .document__name {
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    color: #0F488B;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 22px 0 22px 0;
+  }
+  .documents__desk .container .documents__desk__inner .documents__list__container .document .document__download {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .documents__desk .container .documents__desk__inner .documents__list__container .document .document__download .document__download__button {
+    border: none;
+    background: none;
+  }
+  .documents__desk .container .documents__desk__inner .documents__list__container .document .document__download .document__extension {
+    color: #9DB0AC;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=documents.css.map */

@@ -66,6 +66,7 @@
 
 @media (min-width: 768px) {
   .reasons .container {
+    padding: 0;
     width: 700px;
   }
   .reasons .container .reasons__inner .reasons__carousel {
@@ -152,6 +153,9 @@
 @media (min-width: 1280px) {
   .reasons__carousel {
     display: none;
+  }
+  .reasons .container {
+    padding: 0;
   }
   .reasons .container .reasons__inner .reasons__desk {
     display: flex;

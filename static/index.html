@@ -7,9 +7,42 @@
     <title>AstraZeneca</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/playerjs.js" type="text/javascript"></script>
 </head>
 
 <body>
+    <div id="navbar__wrap" class="navbar__wrap">
+        <button id="burger_button__right">
+            <img src="img/fold_out_menu.svg" alt="">
+        </button>
+        <nav class="menu__items">
+            <ul>
+                <li><a href="#">О программе</a></li>
+                <li><a href="#">Зачем участвовать</a></li>
+                <li><a href="#">Кого мы ищем</a></li>
+                <li><a href="#">Направления</a></li>
+                <li><a href="#">Этапы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="footer__nav">
+            <div class="footer__nav__inner">
+                <form action="#" class="aplication__button">
+                    <button>Подать заявку</button>
+                </form>
+                <div class="contact__name__nav">
+                   <span>Контактное лицо</span>  <br>
+                   <span>Елена Тихомирова</span> 
+                </div>
+                <div class="contact__email">
+                    <a href="mailto:ilab@sk.ru">ilab@sk.ru</a>
+                </div>
+                <div class="contact__number">
+                    <a href="tel:+74959560033">+7 (495) 956 00 33 </a><br>(доб. 2076)
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="main__wrapper">
         <header class="header">
             <div class="container">
@@ -19,16 +52,6 @@
                             <button id="burger_button">
                                 <img src="img/fold_out_menu.svg" alt="">
                             </button>
-                            <nav class="menu__items" id="menu__items">
-                                <ul>
-                                    <li><a href="#">О программе</a></li>
-                                    <li><a href="#">Зачем участвовать</a></li>
-                                    <li><a href="#">Кого мы ищем</a></li>
-                                    <li><a href="#">Направления</a></li>
-                                    <li><a href="#">Этапы</a></li>
-                                    <li><a href="#">Контакты</a></li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
                     <div class="logo">
@@ -60,6 +83,7 @@
                 </div>
             </div>
         </header>
+       
         <div class="main__title">
             <div class="container">
                 <div class="main__title__inner">
@@ -74,14 +98,14 @@
                 </div>
             </div>
         </div>
-        <div class="top__girl__section">
+        <div class="top__girl__section" id="girl">
             <div class="top__girl__section__inner">
                 <picture class="iLab__title">
                     <source srcset="img/iLAB_340.svg" media="(min-width: 1280px)" />
                     <source srcset="img/iLab_340.svg" media="(min-width: 340px)" />
                     <img src="img/iLAB_340.svg" />
                 </picture>
-    
+
                 <div class="Lab__title">
                     <picture class="Lab__title">
                         <source srcset="img/LAB_340.svg" media="(min-width: 1280px)" />
@@ -96,16 +120,16 @@
                 <div class="woman">
                     <img src="img/woman_340.png" alt="">
                 </div>
-    
+
             </div>
-    
+
         </div>
         <div class="woman__desktop">
             <img src="img/woman_desktop.svg" alt="">
         </div>
         <div class="application__form">
             <div class="container">
-    
+
                 <div class="aplication__form__inner">
                     <div class="aplication__title__container">
                         <div class="aplication__title">
@@ -126,16 +150,36 @@
                                 решений цифровой медицины под потребности врачей и пациентов.
                                 Проект реализуется совместными усилиями Фонда «Сколково», медицинской клиники Hadassah
                                 Medical
-                                Moscow и биофармацевтической компании AstraZeneca при поддержке компании ПАО «Ростелеком».
-    
+                                Moscow и биофармацевтической компании AstraZeneca при поддержке компании ПАО
+                                «Ростелеком».
+
                             </span>
                         </div>
                     </div>
-    
+
                 </div>
                 <div class="aplication__read__more">
                     <button id="read__more">Читать далее</button>
                 </div>
+            </div>
+        </div>
+        <div class="programm">
+            <div class="container">
+                <div class="programm__inner">
+
+                </div>
+            </div>
+        </div>
+        <div class="player">
+            <div class="container">
+                <div class="title">
+                    Программа 2021
+                </div>
+            </div>
+            
+
+            <div id="player__container">
+
             </div>
         </div>
         <div class="about__partners">
@@ -144,7 +188,7 @@
                     <div class="about__partners__title title">
                         <span>О партнерах</span>
                     </div>
-    
+
                     <div class="swiper carousel">
                         <div class="swiper-wrapper carousel__inner"> <!-- Carousel -->
                             <div class="swiper-slide slide">
@@ -157,7 +201,7 @@
                                         израильской
                                         больницы, состоящей в American Hospital Association
                                     </span>
-    
+
                                     <a href="#">Читать далее</a>
                                 </div>
                             </div>
@@ -166,11 +210,12 @@
                                     <img src="img/slider/AstraZeneca.png" alt="" />
                                     <span class="main__text">
                                         Международная научно-ориентированная биофармацевтическая компания, нацеленная на
-                                        исследование, разработку и вывод на рынок рецептурных препаратов преимущественно в
+                                        исследование, разработку и вывод на рынок рецептурных препаратов преимущественно
+                                        в
                                         таких
                                         терапевтических областях, как онкология, кардиология, нефрология и метаболизм
                                     </span>
-    
+
                                     <a href="#">Читать далее</a>
                                 </div>
                             </div>
@@ -183,7 +228,7 @@
                                         государственных
                                         и частных организаций. Занимает лидирующие позиции на рынке услуг доступа
                                     </span>
-    
+
                                     <a href="#">Читать далее</a>
                                 </div>
                             </div>
@@ -191,18 +236,21 @@
                                 <div class="slide__inner">
                                     <img src="img/slider/GE_h.svg" alt="" />
                                     <span class="main__text">
-                                        GE Healthcare – бизнес-подразделение GE (NYSE: GE) с оборотом $16,7 млрд. Являясь
+                                        GE Healthcare – бизнес-подразделение GE (NYSE: GE) с оборотом $16,7 млрд.
+                                        Являясь
                                         одним
-                                        из ведущих мировых производителей передового медицинского оборудования и цифровых
-                                        решений, GE Healthcare помогает врачам получать качественную информацию и принимать
+                                        из ведущих мировых производителей передового медицинского оборудования и
+                                        цифровых
+                                        решений, GE Healthcare помогает врачам получать качественную информацию и
+                                        принимать
                                     </span>
-    
+
                                     <a href="#">Читать далее</a>
                                 </div>
                             </div>
                         </div>
                         <div class="pagination__custom">
-    
+
                         </div>
                     </div>
                 </div>
@@ -213,16 +261,18 @@
                         </div>
                     </div>
                     <div class="about__partners__desktop__inner">
-    
+
                         <div class="slide">
                             <div class="slide__inner">
                                 <img src="img/slider/hadassah_partner.png" alt="" />
                                 <span class="main__text">
-                                    Первый в России медицинский клинико-диагностический центр под управлением иностранного
-                                    университетского госпиталя со столетней историей – Hadassah, единственной израильской
+                                    Первый в России медицинский клинико-диагностический центр под управлением
+                                    иностранного
+                                    университетского госпиталя со столетней историей – Hadassah, единственной
+                                    израильской
                                     больницы, состоящей в American Hospital Association
                                 </span>
-    
+
                                 <a href="#">Читать далее</a>
                             </div>
                         </div>
@@ -231,10 +281,11 @@
                                 <img src="img/slider/AstraZeneca.png" alt="" />
                                 <span class="main__text">
                                     Международная научно-ориентированная биофармацевтическая компания, нацеленная на
-                                    исследование, разработку и вывод на рынок рецептурных препаратов преимущественно в таких
+                                    исследование, разработку и вывод на рынок рецептурных препаратов преимущественно в
+                                    таких
                                     терапевтических областях, как онкология, кардиология, нефрология и метаболизм
                                 </span>
-    
+
                                 <a href="#">Читать далее</a>
                             </div>
                         </div>
@@ -243,10 +294,11 @@
                                 <img src="img/slider/rostelecom.svg" alt="" />
                                 <span class="main__text">
                                     Крупнейший в России интегрированный провайдер цифровых услуг и решений, который
-                                    присутствует во всех сегментах рынка и охватывает миллионы домохозяйств, государственных
+                                    присутствует во всех сегментах рынка и охватывает миллионы домохозяйств,
+                                    государственных
                                     и частных организаций. Занимает лидирующие позиции на рынке услуг доступа
                                 </span>
-    
+
                                 <a href="#">Читать далее</a>
                             </div>
                         </div>
@@ -254,11 +306,12 @@
                             <div class="slide__inner">
                                 <img src="img/slider/GE_h.svg" alt="" />
                                 <span class="main__text">
-                                    GE Healthcare – бизнес-подразделение GE (NYSE: GE) с оборотом $16,7 млрд. Являясь одним
+                                    GE Healthcare – бизнес-подразделение GE (NYSE: GE) с оборотом $16,7 млрд. Являясь
+                                    одним
                                     из ведущих мировых производителей передового медицинского оборудования и цифровых
                                     решений, GE Healthcare помогает врачам получать качественную информацию и принимать
                                 </span>
-    
+
                                 <a href="#">Читать далее</a>
                             </div>
                         </div>
@@ -277,19 +330,19 @@
                             <img src="img/white_road_line.svg" alt="">
                         </div>
                         <img src="img/man.png" alt="">
-    
+
                     </div>
                     <div class="objectives__text__container">
                         <div class="gold__road__line"></div>
                         <div class="objectives__text__inner">
                             <div class="objectives__text main__text">
-    
+
                                 <img src="img/marker_01.svg" alt="">
                                 <span>
                                     Поиск, отбор и адаптация перспективных проектов под задачи
                                     корпораций
                                 </span>
-    
+
                             </div>
                             <div class="objectives__text main__text">
                                 <img src="img/marker_02.svg" alt="">
@@ -298,7 +351,7 @@
                                     сообществом. Развитие
                                     технологии продукта, которые соответствуют потребностям пациентам и здравоохранению
                                 </span>
-    
+
                             </div>
                             <div class="objectives__text main__text">
                                 <img src="img/marker_03.svg" alt="">
@@ -309,7 +362,7 @@
                                     экспертов
                                     организаций-партнеров
                                 </span>
-    
+
                             </div>
                         </div>
                     </div>
@@ -317,10 +370,11 @@
                         <img src="img/man_desktop.svg" alt="">
                     </div>
                     <div class="fictitious__container">
-    
+
                     </div>
                     <div class="objectives__text__desk">
-                        <div class="main__text">Поиск, отбор и адаптация перспективных проектов под задачи корпораций</div>
+                        <div class="main__text">Поиск, отбор и адаптация перспективных проектов под задачи корпораций
+                        </div>
                         <div class="main__text">Взаимодействие с центрами экспертизы и врачебным сообществом. Развитие
                             технологии продукта, которые соответствуют потребностям пациентам и здравоохранению</div>
                         <div class="main__text">Сбор и учет обратной связи от врачей и пациентов. Доработка продукта с
@@ -377,7 +431,7 @@
                                 </div>
                             </div>
                             <div class="pagination__custom">
-    
+
                             </div>
                         </div>
                         <div class="carousel__inner carousel__none"> <!-- Carousel -->
@@ -426,13 +480,16 @@
                                     <div class="reason__slide__text__lower">
                                         <span class="main__text">
                                             <ul>
-                                                <li class="main__text"> В индивидуальном режиме работать с 2-4 менторами из
+                                                <li class="main__text"> В индивидуальном режиме работать с 2-4 менторами
+                                                    из
                                                     индустриальных компаний,
                                                     венчурных фондов и исследовательских организаций</li>
-                                                <li class="main__text">Протестировать своё решение на базе клиники Hadassah
+                                                <li class="main__text">Протестировать своё решение на базе клиники
+                                                    Hadassah
                                                     Medical Moscow и получить
                                                     обратную связь от врачей и пациентов</li>
-                                                <li class="main__text">Принять участие в образовательной части программы.
+                                                <li class="main__text">Принять участие в образовательной части
+                                                    программы.
                                                 </li>
                                             </ul>
                                         </span>
@@ -457,8 +514,10 @@
                                 <div class="first__reason__inner">
                                     <img src="img/second_slider/first_reason_img.svg" alt="" />
                                     <span class="main__text">
-                                        Лучшие из 3-5 стартапов, прошедших отбор, получат возможность пройти акселерационную
-                                        программу, созданную Фондом "Сколково" с использованием 10-ти летнего опыта развития
+                                        Лучшие из 3-5 стартапов, прошедших отбор, получат возможность пройти
+                                        акселерационную
+                                        программу, созданную Фондом "Сколково" с использованием 10-ти летнего опыта
+                                        развития
                                         стартапов и лучших международных практик
                                     </span>
                                 </div>
@@ -487,20 +546,23 @@
                                     <div class="reason__slide__text__lower">
                                         <span class="main__text">
                                             <ul>
-                                                <li class="main__text"> В индивидуальном режиме работать с 2-4 менторами из
+                                                <li class="main__text"> В индивидуальном режиме работать с 2-4 менторами
+                                                    из
                                                     индустриальных компаний,
                                                     венчурных фондов и исследовательских организаций</li>
-                                                <li class="main__text">Протестировать своё решение на базе клиники Hadassah
+                                                <li class="main__text">Протестировать своё решение на базе клиники
+                                                    Hadassah
                                                     Medical Moscow и получить
                                                     обратную связь от врачей и пациентов</li>
-                                                <li class="main__text">Принять участие в образовательной части программы.
+                                                <li class="main__text">Принять участие в образовательной части
+                                                    программы.
                                                 </li>
                                             </ul>
                                         </span>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="integration__button__desk">
                             <div class="integration__button__inner">
@@ -524,9 +586,11 @@
                             Кого мы ищем
                         </div>
                         <div class="search__text">
-                            Мы ищем инновационные проекты и решения в области онкологии, сердечно-сосудистых заболеваний,
+                            Мы ищем инновационные проекты и решения в области онкологии, сердечно-сосудистых
+                            заболеваний,
                             заболеваний обмена веществ и почек, респираторных заболеваний, патологии иммунной системы,
-                            гастроэнтерологии, цифровые решения для подразделения R&D фармацевтической компании, решения по
+                            гастроэнтерологии, цифровые решения для подразделения R&D фармацевтической компании, решения
+                            по
                             поддержке пациентов-участников клинических исследований в условиях пандемии.
                         </div>
                         <div class="search__lower__container">
@@ -597,7 +661,8 @@
                             <img src="img/privilege/6.svg" alt="">
                         </div>
                         <span class="main__text">
-                            Приоритет проектам, представляющим бизнес-интерес для компаний-партнёров iLAB и / или решающим
+                            Приоритет проектам, представляющим бизнес-интерес для компаний-партнёров iLAB и / или
+                            решающим
                             важные задачи для системы Здравоохранения
                         </span>
                     </div>
@@ -619,9 +684,11 @@
                         </div>
                         <div class="biopharma__text">
                             <span class="main__text">
-                                Цифровые решения в области выявления, диагностики и лечения ХСН, ХБП, бронхиальной астмы,
+                                Цифровые решения в области выявления, диагностики и лечения ХСН, ХБП, бронхиальной
+                                астмы,
                                 сахарного диабета, системы поддержки принятия врачебных решений, системы маршрутизации и
-                                поддержки пациентов, другие цифровые решения для врачей и пациентов в указанных нозологиях,
+                                поддержки пациентов, другие цифровые решения для врачей и пациентов в указанных
+                                нозологиях,
                                 поддержка врачей и пациентов в условиях пандемии
                             </span>
                         </div>
@@ -638,19 +705,28 @@
                                     </div>
                                 </div>
                                 <div class="oncology__second__line">
-                                    <img src="img/oncology.svg" alt="">
+
+                                    <picture>
+                                        <source srcset="img/oncology_desk.svg" media="(min-width: 1280px)" />
+                                        <source srcset="img/oncology.svg" media="(min-width: 340px)" />
+                                        <img src="img/oncology.svg" />
+                                    </picture>
                                 </div>
                                 <div class="oncology__img">
-                                    <img src="img/man_2.png" alt="">
+                                    <picture>
+                                        <source srcset="img/man_1280.png" media="(min-width: 1280px)" />
+                                        <source srcset="img/man_2_340.png" media="(min-width: 340px)" />
+                                        <img src="img/man_2_340.png" />
+                                    </picture>
+
                                 </div>
-                
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-       
         <div class="stages">
             <div class="container">
                 <div class="stages__inner">
@@ -680,17 +756,86 @@
                         </div>
                     </div>
                     <div class="stage__first__line">
-    
+
                     </div>
                     <div class="stage__second__line">
-    
+
                     </div>
                     <div class="double__arrow">
                         <img src="img/icons/double_arrow.svg" alt="">
                     </div>
                 </div>
+                <div class="stages__desk">
+                    <div class="title">
+                        Этапы
+                    </div>
+                    <div class="stages__container">
+                        <div class="stage stage__inactive">
+                            <div class="stage__date">
+                                15 – 31 Марта 2021
+                            </div>
+                            <div class="stage__name">
+                                Поиск <br>
+                                и привлечение <br> проектов
+                            </div>
+                        </div>
+                        <div class="stage">
+                            <div class="stage__date">
+                                1 – 10 Апреля 2021
+                            </div>
+                            <div class="stage__name">
+                                Диагностика <br>
+                                стартапов<br>
+                                Pitch Day
+                            </div>
+                        </div>
+                        <div class="stage">
+                            <div class="stage__date">
+                                Апрель 2021
+                            </div>
+                            <div class="stage__name">
+                                Образовательный<br>
+                                BootCamp
+                            </div>
+                        </div>
+                        <div class="stage">
+                            <div class="stage__date">
+                                Май – Сентябрь 2021
+                            </div>
+                            <div class="stage__name">
+                                Акселерационный <br> блок (4 – 6 месяцев)
+                            </div>
+                        </div>
+                        <div class="stage">
+                            <div class="stage__date">
+                                Октябрь 2021
+                            </div>
+                            <div class="stage__name">
+                                Демо день <br>
+                                Итоговая диагностика
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="stage__line__progress__inner">
+
+                    </div>   
+                    <div class="double__arrow__desk">
+                        <img src="img/icons/double_arrow_desk.svg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="line__progress__container">
+            <div class="stage__line__progress">
+    
+            </div> 
+        </div>
+        <div class="stage__line__container">
+            <div class="stage__line">
+
+            </div> 
+
+        </div>     
         <div class="juries__and__mentors">
             <div class="container">
                 <div class="juries_and_mentors__inner">
@@ -821,17 +966,145 @@
                                 </div>
                             </div>
                             <div class="pagination__custom">
-    
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
+        </div>
+        <div class="juries__desk">
+            <div class="juries__desk__inner">
+                <div class="title">
+                    Жюри и менторы
+                </div>
+                <div class="juri__description">
+                        <div>
+                            <span>20+ менторов</span><br>
+                            <span>Представители корпораций, инвесторов и успешных стартапов</span><br>
+                        </div>
+                        <div>
+                            <span>4+ ментора</span><br>
+                            <span>На 1 участника стартапа</span><br>
+                        </div>
+                        <div>
+                            <span>20+ менторов</span><br>
+                            <span>Индивидуальной работы (тестирования гипотез, custdev)</span>
+                        </div>
+                </div>
+                <div class="juries__desk__slides">
+                    <div class="juri__slide">
+                        <div class="juri__slide__inner">
+                            <img src="img/juri/juri_1.svg" alt="" />
+                            <span class="juri__name">
+                                Родион<br>
+                                Сигал
+                            </span>
+                            <span class="work__place">
+                                Hadassah Medical Moscow
+                            </span>
+                        </div>
+                    </div>
+                    <div class="juri__slide">
+                        <div class="juri__slide__inner">
+                            <img src="img/juri/juri_2.svg" alt="" />
+                            <span class="juri__name">
+                                Борис<br>
+                                Глазков
+                            </span>
+                            <span class="work__place">
+                                Hadassah Medical Moscow
+                            </span>
+                        </div>
+                    </div>
+                    <div class="juri__slide">
+                        <div class="juri__slide__inner">
+                            <img src="img/juri/juri_3.svg" alt="" />
+                            <span class="juri__name">
+                                Любовь <br>Симонова-Емельянова
+                            </span>
+                            <span class="work__place">
+                                ПАО «Ростелеком»
+                            </span>
+                        </div>
+                    </div>
+                    <div class="juri__slide">
+                        <div class="juri__slide__inner">
+                            <img src="img/juri/juri_4.svg" alt="" />
+                            <span class="juri__name">
+                                Анна <br>Бращенкова
+                            </span>
+                            <span class="work__place">
+                                АстраЗенека
+                            </span>
+                        </div>
+                    </div>
+                    <div class="juri__slide">
+                        <div class="juri__slide__inner">
+                            <img src="img/juri/juri_5.svg" alt="" />
+                            <span class="juri__name">
+                                Лоран <br>Акопян
+                            </span>
+                            <span class="work__place">
+                                iPavlov
+                            </span>
+                        </div>
+                    </div>
+                    <div class="juri__slide">
+                        <div class="juri__slide__inner">
+                            <img src="img/juri/juri_6.svg" alt="" />
+                            <span class="juri__name">
+                                Алексей<br>
+                                Виноградов
+                            </span>
+                            <span class="work__place">
+                                Unicorn Capital Partners
+                            </span>
+                        </div>
+                    </div>
+                    <div class="juri__slide">
+                        <div class="juri__slide__inner">
+                            <img src="img/juri/juri_7.svg" alt="" />
+                            <span class="juri__name">
+                                Софья <br>
+                                Зубанова
+                            </span>
+                            <span class="work__place">
+                                RBV Capital
+                            </span>
+                        </div>
+                    </div>
+                    <div class="juri__slide">
+                        <div class="juri__slide__inner">
+                            <img src="img/juri/juri_8.svg" alt="" />
+                            <span class="juri__name">
+                                Екатерина<br>
+                                Соболева
+                            </span>
+                            <span class="work__place">
+                                GE Healthcare
+                            </span>
+                        </div>
+                    </div>
+                    <div class="juri__slide">
+                        <div class="juri__slide__inner">
+                            <img src="img/juri/juri_9.svg" alt="" />
+                            <span class="juri__name">
+                                Глеб<br>
+                                Тимофеев
+                            </span>
+                            <span class="work__place">
+                                GE Healthcare
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                </div>
         </div>
         <div class="team">
             <div class="container">
                 <div class="team__inner">
+                    <div class="title">Команда проекта</div>
                     <div class="team__carousel">
                         <div class="swiper carousel__team">
                             <div class="swiper-wrapper carousel__inner__inner">
@@ -884,11 +1157,75 @@
                                         </span>
                                     </div>
                                 </div>
-    
+
                             </div>
                             <div class="pagination__custom">
-    
+                                
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team__desk">
+            <div class="container">
+                <div class="team__desk__inner">
+                    <div class="title">Команда проекта</div>
+                    <div class="team__desk__swiper__container">
+                        <div class="swiper team__desk__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide-team swiper-slide">
+                                    <div class="team-slide-inner">
+                                        <img src="img/team/member_1.svg" alt="" />
+                                        <span class="member__name">
+                                            Камила<br>
+                                            Зарубина
+                                        </span>
+                                        <span class="post">Директор по акселерации, PhD </span>
+                                        <span class="work__place">
+                                            Лидер программы со стороны Сколково
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-team swiper-slide">
+                                    <div class="team-slide-inner">
+                                        <img src="img/team/member_2.svg" alt="" />
+                                        <span class="member__name">
+                                            Евгений<br>
+                                            Шеенко
+                                        </span>
+                                        <span class="post">CFA</span>
+                                        <span class="work__place">
+                                            Методология программы
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-team swiper-slide">
+                                    <div class="team-slide-inner">
+                                        <img src="img/team/member_3.svg" alt="" />
+                                        <span class="member__name">
+                                            Софья <br>Ярцева
+                                        </span>
+                                        <span class="post">Medical Innovation Lead</span>
+                                        <span class="work__place">
+                                            Лидер программы со стороны АстраЗенека
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-team swiper-slide">
+                                    <div class="team-slide-inner">
+                                        <img src="img/team/member_4.svg" alt="" />
+                                        <span class="member__name">
+                                            Иван <br>Таскин
+                                        </span>
+                                        <span class="work__place">
+                                            Работа со стартапами
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
@@ -939,12 +1276,62 @@
                                     <a href="#"><img src="img/download_button.svg" alt=""></a>
                                 </button>
                             </div>
-    
+
                         </div>
-    
+
                     </div>
                     <div class="pagination__custom">
-    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="documents__desk">
+            <div class="container">
+                <div class="documents__desk__inner">
+                    <div class="title">
+                        Документы
+                    </div>
+                    <div class="documents__list__container">
+                        <div class="document">
+                            <div class="document__name">
+                                Шаблон презентации
+                            </div>
+                            <div class="document__download">
+                                <div class="document__extension">
+                                    PDF • 10,3 Mb
+                                </div>
+                                <button class="document__download__button">
+                                    <a href="#"><img src="img/download_button.svg" alt=""></a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document__name">
+                                Положение о конкурсном<br> отборе
+                            </div>
+                            <div class="document__download">
+                                <div class="document__extension">
+                                    PDF • 9,7 Mb
+                                </div>
+                                <button class="document__download__button">
+                                    <a href="#"><img src="img/download_button.svg" alt=""></a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document__name">
+                                Согласие на обработку персональных данных
+                            </div>
+                            <div class="document__download">
+                                <div class="document__extension">
+                                    PDF • 8,5 Mb
+                                </div>
+                                <button class="document__download__button">
+                                    <a href="#"><img src="img/download_button.svg" alt=""></a>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -975,14 +1362,45 @@
                             <div class="oraganizers__slide__inner">
                                 <img src="img/slider/ge.svg" alt="">
                             </div>
-    
+
                         </div>
                     </div>
                     <div class="pagination__custom">
-    
+
                     </div>
                 </div>
-    
+
+            </div>
+        </div>
+        <div class="oraganizers__desk">
+            <div class="container">
+                <div class="oraganizers__desk__inner">
+                    <div class="title">
+                        Организаторы
+                    </div>
+                    <div class="oraganizers__container">
+                        <div class="oraganizer">
+                            <div class="oraganizers__slide__inner">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="oraganizer">
+                            <div class="oraganizers__slide__inner">
+                                <img src="img/slider/hadassah_partner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="oraganizer">
+                            <div class="oraganizers__slide__inner">
+                                <img src="img/slider/skolkovo.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="oraganizer">
+                            <div class="oraganizers__slide__inner">
+                                <img src="img/slider/ge.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="partners__footer">
@@ -1014,7 +1432,38 @@
                         </div>
                     </div>
                     <div class="pagination__custom">
-    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partners__desk">
+            <div class="container">
+                <div class="parters__desk__inner">
+                    <div class="title">
+                        Партнеры
+                    </div>
+                    <div class="partners__container">
+                        <div class="partner">
+                            <div class="partners__slide__inner">
+                                <img src="img/slider/rostelecom.svg" width="95px" height="24px" alt="">
+                            </div>
+                        </div>
+                        <div class="partner">
+                            <div class="partners__slide__inner">
+                                <img src="img/slider/horse.svg" width="95px" height="24px" alt="">
+                            </div>
+                        </div>
+                        <div class="partner">
+                            <div class="partners__slide__inner">
+                                <img src="img/slider/hospital.svg" width="95px" height="24px" alt="">
+                            </div>
+                        </div>
+                        <div class="partner">
+                            <div class="partners__slide__inner">
+                                <img src="img/slider/rbv.svg" width="95px" height="24px" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1022,11 +1471,14 @@
         <div class="footer">
             <div class="footer__inner">
                 <div class="footer__title title">
-                    Контакты
+                    <div>
+                        Контакты
+                    </div>
+                    
                 </div>
                 <div class="contact">
                     <div>
-    
+
                         <div class="contact__face">
                             Контактное лицо
                         </div>
@@ -1035,7 +1487,7 @@
                         </div>
                     </div>
                     <div>
-    
+
                         <div class="contact__email">
                             <a href="mailto:ilab@sk.ru">ilab@sk.ru</a>
                         </div>
@@ -1050,7 +1502,7 @@
                     </form>
                 </div>
                 <div class="footer__bottom">
-                    <div>
+                    <div class="footer__upper">
                         <div class="bottom__copyright">
                             © AstraZeneca – Skolkovo Startup Challenge 2021
                         </div>
@@ -1068,10 +1520,14 @@
     <!-- <script src="../static/js/fold_out_menu.js"></script> -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/player_start.js"></script>
+    
     <script src="js/fold_out_menu.js"></script>
     <script src="js/read_more.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/partners_swiper.js"></script>
+    <script src="js/team_desktop_swiper.js"></script>
+    
 </body>
 
 </html>

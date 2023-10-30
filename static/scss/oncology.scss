@@ -31,12 +31,12 @@
         .oncology__img{
             position: absolute;
             bottom: 0;
-            height: 110px;
             right: 58px;
-            img{
-                width: 82px;
-                height: 110px;
-            }
+            height: 110px;
+                img{
+                    width: 82px;
+                    height: 110px;
+                }
         }
     }
 }
@@ -50,6 +50,47 @@
             }
             .oncology__img{
                 right: 260px;
+                height: 110px;
+                img{
+                    width: 82px;
+                    height: 110px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:1280px){
+    .oncology{
+        .container{
+            padding: 0;
+        }
+        .oncology__inner{
+            width: 620px;
+            height: 450px;
+            .oncology__first__line{
+                .oncology__title{
+                    font-size: 30px;
+                }
+                .oncology__icon{
+                    img{
+                        height: 50px;
+                    }
+                }
+            }
+            .oncology__second__line{
+                height: auto;
+                bottom: 147px;
+                
+                
+            }
+            .oncology__img{
+                height: 390px;
+                right: 59px;
+                img{
+                    height: 390px;
+                    width: 291px;
+                }
+                
             }
         }
     }

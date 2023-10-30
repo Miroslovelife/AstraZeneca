@@ -12,17 +12,6 @@
   background: none;
 }
 
-.menu__items {
-  display: none;
-}
-
-.menu__items_after {
-  display: block;
-  position: absolute;
-  width: 340px;
-  height: 100%;
-}
-
 @media (min-width: 768px) {
   .header__inner {
     margin-top: 18px;
@@ -38,10 +27,16 @@
   .header {
     margin-bottom: 0;
   }
+  .header .container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
   .header__inner {
     height: 120px;
     margin-top: 0;
     align-items: center;
+    width: 1280px;
   }
   .header__inner .logo {
     margin-right: 0;
