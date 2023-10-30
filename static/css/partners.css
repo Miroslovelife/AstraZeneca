@@ -77,7 +77,17 @@
     align-items: center;
     margin-bottom: 263px;
   }
+  .about__partners .about__partners__desktop .container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__partners .about__partners__desktop .container .about__partners__title {
+    width: 1280px;
+  }
   .about__partners .about__partners__desktop .about__partners__desktop__inner {
+    max-width: 1920px;
     display: flex;
     flex-wrap: wrap;
     -moz-column-gap: 40px;

@@ -177,8 +177,15 @@
 .reasons{
     .container{
         padding: 0;
+        width: 1280px;
+        .reasons__title{
+            width: 1280px;
+        }
         .reasons__inner{
+            
             .reasons__desk{
+
+                
                 display: flex;
                 margin-bottom: 140px;
                 align-items: center;

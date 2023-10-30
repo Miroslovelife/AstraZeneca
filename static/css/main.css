@@ -70,6 +70,10 @@
     font-size: 17px;
   }
 }
+* {
+  outline: 1px solid red;
+}
+
 @media (min-width: 1920px) {
   body {
     display: flex;

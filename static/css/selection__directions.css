@@ -60,6 +60,9 @@
   }
 }
 @media (min-width: 1280px) {
+  .selection__directions .selection__directions__inner .title {
+    width: 1280px;
+  }
   .selection__directions .selection__directions__inner .bio__onc__container {
     display: flex;
     flex-direction: row;
